@@ -1,0 +1,26 @@
+// Colors
+$primary_purple: #5c02c2;
+$primary_white: #fff;
+$primary_black: #000;
+
+// Fonts
+@include font-face("Coolvetica", font-files("/lib/fonts/coolvetica.otf"));
+@include font-face("Biko", font-files("/lib/fonts/biko.woff"));
+@include font-face("Opensans", font-files("/lib/fonts/opensans/bold.ttf"));
+
+
+$cool_font: "Coolvetica";
+$biko_font: "Biko";
+$open_font: "Opensans";
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
