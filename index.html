@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lawrence Consulting LLC</title>
-    <link rel="stylesheet" href="lib/css/foundatio.min.css"/>
+    <link rel="stylesheet" href="lib/css/foundation.min.css"/>
     <link rel="stylesheet" type="text/css" href="lib/css/screen.css">
     <script type="text/javascript" src="lib/js/skrollr.min.js"></script>
     <script type="text/javascript" src="lib/js/jquery-1.11.0.min.js"></script>
@@ -13,18 +13,22 @@
   <body>
     <div id="LC-landing">
       <div id="LC-gradient">
-      <div id="landing-header">
-      <div id="landing-repeat"></div>  
-        <div id="landing-padding">
-          <img src="lib/img/logo_p.png" id="k-logo">
-          <ul id="landing-nav" class="pull-right">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>Press</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+      <div id="landing-header">  
+        <div id="landing-padding" class="row">
+          <div id="padding-img" class="large-2 medium-2 small-2 columns">
+             <img src="lib/img/logo_p.png" id="k-logo">
+          </div>
+          <div id="padding-menu" class="large-10 medium-10 small-10 columns">
+            <ul id="landing-nav" class="pull-right">
+              <li>Home</li>
+              <li>Mission</li>
+              <li>LookBook</li>
+              <li>Press</li>
+              <li>Contact</li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div> <!-- Close padding landing -->
       </div>
         <div id="landing-intro">
           <div class="pull-right">
@@ -40,28 +44,118 @@
       </div>
     </div>
     <div id="LC-about">
-      <h1>What We Do</h1>
-      <hr>
-      <p id="about-what">We aim to help companies transform themselves into smarter, sharper, and better versions of themselves. We take the two pronged approach in achieving this goal. First we help sharpen the image and perception of those who work for your organization. These people are the first line ambassadors of your brand and what you stand for, and secondly we help the company as a whole understand that  the perception and image of any company are at the core of its existence; these have taken years and in some cases decades to hone and perfect.</p>
+      <div id="lc-who" class="row">
+        <h1>Who We Are</h1>
+        <hr>
+        <p id="about-who">At Lawrence Consulting, we individualize those values and bridge the gap between generic advertising and marketing. Through social and community based programs, we help companies personalize their message and brand, while simultaneously giving back to the community and increasing their social awareness, responsibility and image currency. We understand each company is unique and different, and as such we customize our solutions to meet the individual needs and goals of each company, and help them achieve maximum results.</p>
+      </div>
 
-      <h2>Who We Are</h2>
-      <hr>
-      <p id="about-who">At Lawrence Consulting, we individualize those values and bridge the gap between generic advertising and marketing. Through social and community based programs, we help companies personalize their message and brand, while simultaneously giving back to the community and increasing their social awareness, responsibility and image currency. We understand each company is unique and different, and as such we customize our solutions to meet the individual needs and goals of each company, and help them achieve maximum results.</p>
-    </div>
+      <div id="lc-what" class="row">
+        <h2>What We Do</h2>
+        <hr>
+        <p id="about-what">We aim to help companies transform themselves into smarter, sharper, and better versions of themselves. We take the two pronged approach in achieving this goal. First we help sharpen the image and perception of those who work for your organization. These people are the first line ambassadors of your brand and what you stand for, and secondly we help the company as a whole understand that  the perception and image of any company are at the core of its existence; these have taken years and in some cases decades to hone and perfect.</p>
+      </div>
 
-    <div id="LC-Package">
-      <p>Show options of what types of consulting Kunle does, fashion, life, etc;</p>
-    </div>
+      <div id="lc-categories" class="row">
+        <h3 id="lc-package-title" class="pull-left">Individual <br><span>Packages</span></h3>
+        <div class="clear"></div>
+        <div class="lc-category small-2 large-4 columns">
+          <p class="cat-no">1</p>
+          <h4 class="cat-head">Company Branding</h4>
+          <p class="cat-msg">Through social and community based programs, we help companies personalize their message and brand</p>
+        </div>
+        <div class="lc-category small-2 large-4 columns">
+          <p class="cat-no">2</p>
+          <h4 class="cat-head">Image Handling</h4>
+          <p class="cat-msg">Through social and community based programs, we help companies personalize their message and brand</p>
+        </div>
+        <div class="lc-category small-2 large-4 columns">
+          <p class="cat-no">3</p>
+          <h4 class="cat-head">Personal Styling</h4>
+          <p class="cat-msg">Through social and community based programs, we help companies personalize their message and brand</p>
+        </div>
+      </div>
 
+    </div> <!-- Closes LC-About-->
+    
     <div id="LC-Press">
-      <p>Section That shows companies of involvement..etc coke, pepsi, etc</p>
-    </div>
+      <div class="gradient">
+        <div id="bg-Press">
+          <div class="row">
+            <div class="small-8 large-centered columns">
+              <p>Please Stay Tuned....</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> <!-- Closes LC-Press -->
+   
 
     <div id="LC-Contact">
+      <div class="row">
+        <div id="lc-contact-us" class="large-12 medium-12 columns">
+          <h3 id="lc-contact-title" class="pull-right">Get In <br><span>Touch</span></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-8 medium-8 columns">  
+          <form>
+            <div class="row">
+              <div class="large-12 columns">
+                <label class="error">Please Complete Field</label>
+                <input type="text" placeholder="Name" name="name"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label class="error">Please Complete Field</label>
+                <input type="text" placeholder="Email" name="email"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <textarea placeholder="Message" name="message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <input type="submit" name="submit">
+              </div>
+            </div>
+          </form>
+        </div> <!-- Closes Contact form-->
+        <div class="large-4 medium-4 columns">
+          <p>For further inquires please feel free to send a message and someone will get back with you shortly.</p>
+        </div>
+      </div> <!-- Closes Contact Form Section -->
+    </div> <!-- Closes LC-Contact Section -->
+
+    <div id="LC-Footer">
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <ul class="pull-right">
+            <li><a href="http://www.facebook.com/lawrenceconsulting" target="_blank">Facebook</a></li>
+            <li><a href="http://www.instagram.com/lawrenceconsulting" target="_blank">Instagram</a></li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 medium-4 small-4 columns" id="left-column">
+          <p>Tel: 301-555-5555</p>
+          <address>
+            9307 Andalusia Walk<br>
+            Raleigh NC, 27617
+          </address>
+        </div>
+        <div class="large-4 medium-4 small-4 offset-4 columns" id="right-column">
+          <p>
+          COPYRIGHT &copy; 2014 EarlieClark 
+          </p>
+        </div>
+      </div>
     </div>
 
-
-    
     
   </body>
 </html>

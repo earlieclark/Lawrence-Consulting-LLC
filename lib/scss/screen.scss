@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "variables";
+@import "styles";
 
 //All Styles
 
@@ -23,48 +24,58 @@
 	position: relative;
 
 	#LC-gradient {
-		background: linear-gradient(45deg, rgba(236,240, 241, 0.1) 0%, rgba(92, 2, 194, 0.2) 100%);
+		background: linear-gradient(45deg, rgba(236,240, 241, 0.1) 0%, rgba(2, 2, 2, 0.9) 100%);
 		height: 100%;
 
 		#landing-header {
 			background: url('../img/bg-clear.png') repeat-x;
-
-			#landing-repeat {
-				background: url('../img/landing-repeat.png') repeat-x;
-			}
+			background-color: $primary_purple;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 10;
 
 			#landing-padding {
 				
 				width: 80%;
 				margin: 0 auto;
 
-				#k-logo {
-					width: 100px;
+				#padding-img {
+					display: inline;
+
+					#k-logo {
+						width: 100px;
+					}
 				}
 
-				#landing-nav {
+				#padding-menu {
 					display: inline;
-					line-height: 88px;
-				}
 
-				#landing-nav > li {
-					display: inline;
-					font-size: 20px;
-					margin-left: 20px;
-					font-family: $open_font;
+					#landing-nav {
+						display: inline;
+						line-height: 88px;
+					}
+
+					#landing-nav > li {
+						display: inline;
+						font-size: 20px;
+						margin-left: 20px;
+						font-family: $open_font;
+					}
 				}
-			}
+			} // Close landing Padding
 		}
 	}
 
 	#landing-intro {
-		margin: 200px auto;
-		width: 70%;
+		padding-top: 175px;
+
+		width: 80%;
 
 		div {
 
 			p:nth-child(1) {
-				font-size: 60px;
+				font-size: 5rem;
 				font-family: $cool_font;
 				color: $primary_white;
 			}
@@ -88,7 +99,7 @@
 	}
 
 	#landing-explore {
-		margin: 50px auto;
+		margin: 19% auto;
 		text-align: center;
 
 		button {
@@ -98,45 +109,208 @@
 			padding: 20px;
 			border: 2px solid $primary_white;
 		}
+		button:hover {
+			background: rgba(255, 255, 255, 0.4);
+			cursor: pointer;
+		}
+
 	}
 
 } /* Closes Landing Section */
 
 #LC-about {
 	text-align: center;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 
-	h1 {
-		margin-top: 50px;
-		font-size: 50px;
-		font-family: $open_font;
+	#lc-who {
+		h1 {
+			margin-top: 50px;
+			font-size: 50px;
+			font-family: $open_font;
+		}
+
+		hr {
+			margin: 10px auto;
+			width: 80%;
+			height: 2px;
+			border: 0;
+			background: -webkit-linear-gradient(left,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* IE10+ */
+			background: linear-gradient(to right,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* W3C */
+		}
+	} // lc-who
+
+	#lc-what {	
+		#about-what {
+			font-family: $biko_font;
+		}
+
+		h2 {
+			font-family: $open_font;
+			font-size: 50px;
+			margin-top: 20px;
+		}
+
+		#about-who {
+
+		}
+	} // Close lc-what
+
+	#lc-categories {
+
+		#lc-package-title {
+			font-size: 2.6875rem;
+			text-align: left;
+			font-family: $m_medium_font;
+
+			span {
+				font-size: 7rem;
+				color: $primary_purple;
+				font-family: $m_bold_font;
+				letter-spacing: -3px;
+			}
+		}
+
+		.lc-category {
+			margin: 50px auto; 
+			.cat-no {}
+			.cat-head {
+				font-family: $m_bold_font;
+			}
+			.cat-msg {}
+		}
+	}
+} // Closes LC-about
+
+#LC-Press {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	background: url('../img/bg-camera.jpg') no-repeat fixed;
+	background-size: cover;
+	.gradient {
+		background: linear-gradient(45deg, rgba(236,240, 241, 0.1) 0%, rgba(2, 2, 2, 0.9) 100%);
+		height: 100%;
+		#bg-Press {
+			background: url('../img/bg-pattern.png');
+			height: 100%;
+
+			.row {
+				.columns {
+					p {
+						margin-top: 25%;
+						color: $primary_white;
+						font-size: 4rem;
+						font-family: $cool_font;
+					}
+				}
+			}	
+		}
+	}
+} // Closes LC-Press
+
+#LC-Contact {
+	width: 100%;
+	height: 100% !important;
+	.row {
+		#lc-contact-us {
+			padding: 20px;
+
+			#lc-contact-title {
+				font-size: 2.6875rem;
+				text-align: right;
+				font-family: $m_medium_font;
+
+				span {
+					font-size: 7rem;
+					color: $primary_purple;
+					font-family: $m_bold_font;
+					letter-spacing: -3px;
+				}
+			}
+		}
 	}
 
-	hr {
-		margin: 10px auto;
-		width: 80%;
-		height: 2px;
-		border: 0;
-		background: -webkit-linear-gradient(left,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(left,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* IE10+ */
-		background: linear-gradient(to right,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* W3C */
+	.row {
+		.columns {
+			form {
+				.row {
+					.columns {
+						position: relative;
+
+						.error {
+							position: absolute;
+							right: 35px;
+							top: 20px;
+						}
+						input[type="text"] {
+							padding: 15px;
+							height: 60px;
+							font-family: $m_bold_font;
+						}
+						textarea {
+							padding: 15px;
+							resize: none;
+							height: 100px;
+							font-family: $m_bold_font;
+						}
+						input[type="submit"] {
+							font-family: $m_bold_font;
+							font-size: 1.5em;
+							color: $primary_black;
+							border: 0px;
+							padding: 15px;
+							width: 100%;
+							text-transform: uppercase;
+							background: $primary_grey_l;
+							
+						}
+						input[type="submit"]:hover {
+							cursor: pointer;
+							background: rgba(0,0,0,0.1);
+
+						}
+					}
+				}
+			}
+		}
 	}
+} // Closes LC Contact
 
-	#about-what {
-		font-family: $biko_font;
-	}
+#LC-Footer {
+	border-top: 10px solid;
+	padding: 30px;
+	background: $primary_silver;
+	display: inline-block;
 
-	h2 {
-		font-family: $open_font;
-		font-size: 50px;
-		margin-top: 20px;
-	}
-
-	#about-who {
-
+	.row {
+		ul {
+			margin-top: -85px;
+			margin-bottom: 30px;
+			li {
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				background: $primary_black;
+				display: inline-block;
+				margin-left: 50px;
+				position: relative;
+				a {
+					position: absolute;			
+				}
+			}
+		}
+		#left-column {
+			p {}
+			address {}
+		}
+		#right-column {
+			p {
+				text-align: right;
+			}
+		}
 	}
 }
-
 

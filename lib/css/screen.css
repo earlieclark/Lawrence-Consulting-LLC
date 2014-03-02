@@ -82,29 +82,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url(/lib/fonts/opensans/bold.ttf) format('truetype');
 }
 
-/* line 16, ../scss/variables.scss */
+@font-face {
+  font-family: "MarkMedium";
+  src: url(/lib/fonts/markpromedium.woff) format('woff');
+}
+
+@font-face {
+  font-family: "MarkBold";
+  src: url(/lib/fonts/markprobold.woff) format('woff');
+}
+
+/* line 22, ../scss/variables.scss */
+html, body {
+  height: 100% !important;
+  width: 100%;
+}
+
+/* line 27, ../scss/variables.scss */
 .pull-left {
   float: left;
 }
 
-/* line 20, ../scss/variables.scss */
+/* line 31, ../scss/variables.scss */
 .pull-right {
   float: right;
 }
 
-/* line 24, ../scss/variables.scss */
+/* line 35, ../scss/variables.scss */
 .clear {
   clear: both;
 }
 
-/* line 12, ../scss/screen.scss */
+/* line 1, ../scss/styles.scss */
+.cat-no {
+  font-family: "MarkMedium";
+  margin: 20px auto;
+  border-radius: 55%;
+  background-color: rgba(100, 160, 133, 0.4);
+  text-shadow: #117864 1px 1px, #117864 2px 2px, #117864 3px 3px, #117864 4px 4px, #117864 5px 5px, #117864 6px 6px, #117864 7px 7px, #117864 8px 8px, #117864 9px 9px, #117864 10px 10px, #117864 11px 11px, #117864 12px 12px, #117864 13px 13px, #117864 14px 14px, #117864 15px 15px, #117864 16px 16px, #117864 17px 17px, #117864 18px 18px, #117864 19px 19px, #117864 20px 20px, #117864 21px 21px, #117864 22px 22px, #117864 23px 23px, #117864 24px 24px, #117864 25px 25px, #117864 26px 26px, #117864 27px 27px, #117864 28px 28px, #117864 29px 29px, #117864 30px 30px, #117864 31px 31px, #117864 32px 32px, #117864 33px 33px, #117864 34px 34px, #117864 35px 35px, #117864 36px 36px, #117864 37px 37px, #117864 38px 38px, #117864 39px 39px, #117864 40px 40px, #117864 41px 41px, #117864 42px 42px, #117864 43px 43px, #117864 44px 44px, #117864 45px 45px, #117964 46px 46px, #117965 47px 47px, #117a65 48px 48px, #117a66 49px 49px, #117b66 50px 50px, #117c67 51px 51px, #117c67 52px 52px, #117d68 53px 53px, #117d68 54px 54px, #117e69 55px 55px, #117f69 56px 56px, #117f6a 57px 57px, #12806a 58px 58px, #12806b 59px 59px, #12816b 60px 60px, #12826c 61px 61px, #12826c 62px 62px, #12836d 63px 63px, #12836d 64px 64px, #12846e 65px 65px, #12856e 66px 66px, #12856f 67px 67px, #12866f 68px 68px, #128670 69px 69px, #128770 70px 70px, #138871 71px 71px, #138871 72px 72px, #138972 73px 73px, #138972 74px 74px, #138a73 75px 75px, #138b73 76px 76px, #138b74 77px 77px, #138c74 78px 78px, #138c75 79px 79px, #138d75 80px 80px, #138e76 81px 81px, #138e76 82px 82px, #138f77 83px 83px, #138f77 84px 84px, #149078 85px 85px, #149178 86px 86px, #149179 87px 87px, #149279 88px 88px, #14927a 89px 89px, #14937a 90px 90px, #14947b 91px 91px, #14947b 92px 92px, #14957c 93px 93px, #14957c 94px 94px, #14967d 95px 95px, #14977d 96px 96px, #14977e 97px 97px, #15987e 98px 98px, #15987f 99px 99px, #15997f 100px 100px, #159a80 101px 101px, #159a80 102px 102px, #159b81 103px 103px, #159b81 104px 104px, #159c82 105px 105px, #159d82 106px 106px, #159d83 107px 107px, #159e83 108px 108px, #159e84 109px 109px, #159f84 110px 110px, #16a085 111px 111px;
+  height: 150px;
+  width: 150px;
+  font-size: 75px;
+  line-height: 150px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 13, ../scss/screen.scss */
 #port-test {
   height: 200px;
   width: 200px;
   background: black;
 }
 
-/* line 18, ../scss/screen.scss */
+/* line 19, ../scss/screen.scss */
 #LC-landing {
   background: url("../img/bw-3.png") no-repeat;
   background-size: cover;
@@ -112,58 +143,67 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 100%;
   position: relative;
 }
-/* line 25, ../scss/screen.scss */
+/* line 26, ../scss/screen.scss */
 #LC-landing #LC-gradient {
-  background: linear-gradient(45deg, rgba(236, 240, 241, 0.1) 0%, rgba(92, 2, 194, 0.2) 100%);
+  background: linear-gradient(45deg, rgba(236, 240, 241, 0.1) 0%, rgba(2, 2, 2, 0.9) 100%);
   height: 100%;
 }
-/* line 29, ../scss/screen.scss */
+/* line 30, ../scss/screen.scss */
 #LC-landing #LC-gradient #landing-header {
   background: url("../img/bg-clear.png") repeat-x;
+  background-color: #5c02c2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
-/* line 32, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-repeat {
-  background: url("../img/landing-repeat.png") repeat-x;
-}
-/* line 36, ../scss/screen.scss */
+/* line 38, ../scss/screen.scss */
 #LC-landing #LC-gradient #landing-header #landing-padding {
   width: 80%;
   margin: 0 auto;
 }
-/* line 41, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-padding #k-logo {
+/* line 43, ../scss/screen.scss */
+#LC-landing #LC-gradient #landing-header #landing-padding #padding-img {
+  display: inline;
+}
+/* line 46, ../scss/screen.scss */
+#LC-landing #LC-gradient #landing-header #landing-padding #padding-img #k-logo {
   width: 100px;
 }
-/* line 45, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-padding #landing-nav {
+/* line 51, ../scss/screen.scss */
+#LC-landing #LC-gradient #landing-header #landing-padding #padding-menu {
+  display: inline;
+}
+/* line 54, ../scss/screen.scss */
+#LC-landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav {
   display: inline;
   line-height: 88px;
 }
-/* line 50, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-padding #landing-nav > li {
+/* line 59, ../scss/screen.scss */
+#LC-landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav > li {
   display: inline;
   font-size: 20px;
   margin-left: 20px;
   font-family: "Opensans";
 }
-/* line 60, ../scss/screen.scss */
+/* line 70, ../scss/screen.scss */
 #LC-landing #landing-intro {
-  margin: 200px auto;
-  width: 70%;
+  padding-top: 175px;
+  width: 80%;
 }
-/* line 66, ../scss/screen.scss */
+/* line 77, ../scss/screen.scss */
 #LC-landing #landing-intro div p:nth-child(1) {
-  font-size: 60px;
+  font-size: 5rem;
   font-family: "Coolvetica";
   color: white;
 }
-/* line 72, ../scss/screen.scss */
+/* line 83, ../scss/screen.scss */
 #LC-landing #landing-intro div p:nth-child(n + 2) {
   font-size: 30px;
   font-family: "Opensans";
   color: white;
 }
-/* line 78, ../scss/screen.scss */
+/* line 89, ../scss/screen.scss */
 #LC-landing #landing-intro div hr {
   width: 80%;
   height: 2px;
@@ -177,12 +217,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: linear-gradient(to right, rgba(198, 0, 3, 0) 0%, rgba(198, 0, 3, 0.7) 50%, rgba(198, 0, 3, 0) 100%);
   /* W3C */
 }
-/* line 90, ../scss/screen.scss */
+/* line 101, ../scss/screen.scss */
 #LC-landing #landing-explore {
-  margin: 50px auto;
+  margin: 19% auto;
   text-align: center;
 }
-/* line 94, ../scss/screen.scss */
+/* line 105, ../scss/screen.scss */
 #LC-landing #landing-explore button {
   text-transform: uppercase;
   background: transparent;
@@ -190,22 +230,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 20px;
   border: 2px solid white;
 }
+/* line 112, ../scss/screen.scss */
+#LC-landing #landing-explore button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
 
 /* Closes Landing Section */
-/* line 105, ../scss/screen.scss */
+/* line 121, ../scss/screen.scss */
 #LC-about {
   text-align: center;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
-/* line 110, ../scss/screen.scss */
-#LC-about h1 {
+/* line 127, ../scss/screen.scss */
+#LC-about #lc-who h1 {
   margin-top: 50px;
   font-size: 50px;
   font-family: "Opensans";
 }
-/* line 116, ../scss/screen.scss */
-#LC-about hr {
+/* line 133, ../scss/screen.scss */
+#LC-about #lc-who hr {
   margin: 10px auto;
   width: 80%;
   height: 2px;
@@ -219,13 +264,153 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: linear-gradient(to right, rgba(198, 0, 3, 0) 0%, rgba(198, 0, 3, 0.7) 50%, rgba(198, 0, 3, 0) 100%);
   /* W3C */
 }
-/* line 127, ../scss/screen.scss */
-#LC-about #about-what {
+/* line 146, ../scss/screen.scss */
+#LC-about #lc-what #about-what {
   font-family: "Biko";
 }
-/* line 131, ../scss/screen.scss */
-#LC-about h2 {
+/* line 150, ../scss/screen.scss */
+#LC-about #lc-what h2 {
   font-family: "Opensans";
   font-size: 50px;
   margin-top: 20px;
+}
+/* line 163, ../scss/screen.scss */
+#LC-about #lc-categories #lc-package-title {
+  font-size: 2.6875rem;
+  text-align: left;
+  font-family: "MarkMedium";
+}
+/* line 168, ../scss/screen.scss */
+#LC-about #lc-categories #lc-package-title span {
+  font-size: 7rem;
+  color: #5c02c2;
+  font-family: "MarkBold";
+  letter-spacing: -3px;
+}
+/* line 176, ../scss/screen.scss */
+#LC-about #lc-categories .lc-category {
+  margin: 50px auto;
+}
+/* line 179, ../scss/screen.scss */
+#LC-about #lc-categories .lc-category .cat-head {
+  font-family: "MarkBold";
+}
+
+/* line 187, ../scss/screen.scss */
+#LC-Press {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  background: url("../img/bg-camera.jpg") no-repeat fixed;
+  background-size: cover;
+}
+/* line 193, ../scss/screen.scss */
+#LC-Press .gradient {
+  background: linear-gradient(45deg, rgba(236, 240, 241, 0.1) 0%, rgba(2, 2, 2, 0.9) 100%);
+  height: 100%;
+}
+/* line 196, ../scss/screen.scss */
+#LC-Press .gradient #bg-Press {
+  background: url("../img/bg-pattern.png");
+  height: 100%;
+}
+/* line 202, ../scss/screen.scss */
+#LC-Press .gradient #bg-Press .row .columns p {
+  margin-top: 25%;
+  color: white;
+  font-size: 4rem;
+  font-family: "Coolvetica";
+}
+
+/* line 214, ../scss/screen.scss */
+#LC-Contact {
+  width: 100%;
+  height: 100% !important;
+}
+/* line 218, ../scss/screen.scss */
+#LC-Contact .row #lc-contact-us {
+  padding: 20px;
+}
+/* line 221, ../scss/screen.scss */
+#LC-Contact .row #lc-contact-us #lc-contact-title {
+  font-size: 2.6875rem;
+  text-align: right;
+  font-family: "MarkMedium";
+}
+/* line 226, ../scss/screen.scss */
+#LC-Contact .row #lc-contact-us #lc-contact-title span {
+  font-size: 7rem;
+  color: #5c02c2;
+  font-family: "MarkBold";
+  letter-spacing: -3px;
+}
+/* line 240, ../scss/screen.scss */
+#LC-Contact .row .columns form .row .columns {
+  position: relative;
+}
+/* line 243, ../scss/screen.scss */
+#LC-Contact .row .columns form .row .columns .error {
+  position: absolute;
+  right: 35px;
+  top: 20px;
+}
+/* line 248, ../scss/screen.scss */
+#LC-Contact .row .columns form .row .columns input[type="text"] {
+  padding: 15px;
+  height: 60px;
+  font-family: "MarkBold";
+}
+/* line 253, ../scss/screen.scss */
+#LC-Contact .row .columns form .row .columns textarea {
+  padding: 15px;
+  resize: none;
+  height: 100px;
+  font-family: "MarkBold";
+}
+/* line 259, ../scss/screen.scss */
+#LC-Contact .row .columns form .row .columns input[type="submit"] {
+  font-family: "MarkBold";
+  font-size: 1.5em;
+  color: black;
+  border: 0px;
+  padding: 15px;
+  width: 100%;
+  text-transform: uppercase;
+  background: #95a5a6;
+}
+/* line 270, ../scss/screen.scss */
+#LC-Contact .row .columns form .row .columns input[type="submit"]:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 282, ../scss/screen.scss */
+#LC-Footer {
+  border-top: 10px solid;
+  padding: 30px;
+  background: #bdc3c7;
+  display: inline-block;
+}
+/* line 289, ../scss/screen.scss */
+#LC-Footer .row ul {
+  margin-top: -85px;
+  margin-bottom: 30px;
+}
+/* line 292, ../scss/screen.scss */
+#LC-Footer .row ul li {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: black;
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+}
+/* line 300, ../scss/screen.scss */
+#LC-Footer .row ul li a {
+  position: absolute;
+}
+/* line 310, ../scss/screen.scss */
+#LC-Footer .row #right-column p {
+  text-align: right;
 }
