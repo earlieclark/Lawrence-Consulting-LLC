@@ -1,0 +1,83 @@
+@import "compass/css3";
+// Colors
+$primary_purple: #5c02c2;
+$primary_white: #fff;
+$primary_black: #000;
+$primary_grey: #454545;
+$primary_grey_l: #95a5a6;
+$primary_grey_m: #A9A9A9;
+$primary_silver: #bdc3c7;
+$primary_off_white: #FAEBD7;
+
+// Fonts
+@include font-face("Coolvetica", url("../fonts/coolvetica.otf"));
+@include font-face("Biko", font-files("../fonts/biko.woff"));
+@include font-face("Opensans", font-files("../fonts/opensans/bold.ttf"));
+@include font-face("MarkMedium", url("../fonts/markpromedium.woff"));
+@include font-face("MarkBold", url("../fonts/markprobold.woff"));
+@include font-face("CanterBold", font-files("../fonts/canterbold.otf"));
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900);
+@import url(http://fonts.googleapis.com/css?family=Nobile:400,700,700italic);
+
+/* font-family: 'Nobile', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+
+$cool_font: "Coolvetica";
+$biko_font: "Biko";
+$open_font: "Opensans";
+$m_medium_font: "MarkMedium";
+$m_bold_font: "MarkBold";
+$canter_font: "CanterBold";
+
+
+
+html, body, #LC-Body-Container  {
+	position: relative;
+	height: 100% !important;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+}
+.ui-loader {
+	display: none !important;
+}
+body {
+	overflow-x: hidden;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+.border {
+	display: block;
+	width: 80px;
+	height: 7px;
+	background: $primary_purple;
+	margin: 20px auto;
+}
+.bolder {
+	font-size: 7rem;
+	font-family: $m_bold_font;
+	letter-spacing: -3px;
+	color: $primary_purple;
+}
+.hidden {
+	display: none;
+}
+.hr-tag {
+	margin: 10px auto;
+	width: 80%;
+	height: 2px;
+	border: 0;
+	background: -webkit-linear-gradient(left,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(198,0,3,0) 0%,rgba(198,0,3,0.7) 50%,rgba(198,0,3,0) 100%); /* W3C */
+} //Used Exclusively for hr elememts

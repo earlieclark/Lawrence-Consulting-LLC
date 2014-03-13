@@ -1,0 +1,197 @@
+/* Ipad Query */
+
+
+@media all and (max-width: 2200px) and (min-width: 1025px) {
+	#menu-slide-icon {
+		visibility: hidden;
+	}
+	#site-email {
+		margin-bottom: 30px !important;
+	}
+}
+
+@media all and (max-width: 1024px) and (min-width: 721px) {
+	#menu-slide-icon {
+		visibility: hidden;
+	}
+	#landing-nav > li {
+		font-size: 0.825rem !important;
+	}
+	#bg-walk, #bg-bridge {
+		height: 250px !important;
+		width: 250px !important;
+	}
+	#comp-title {
+		font-size: 4rem !important;
+		text-align: center;
+	}
+	#land-page > hr {
+		margin: 20px auto;
+	}
+	#comp-desc {
+		text-align: center;
+	}
+	#site-email {
+		margin-top: 10px !important;
+		margin-bottom: 40px !important;
+		font-weight: 500 !important;
+		color: white !important;
+	}
+	#social-media {
+		margin: 4px auto !important;
+	}
+
+}
+
+
+@media all and (max-width: 736px) and (min-width: 721px) {
+	#landing-nav > li {
+		font-size: 0.78rem !important;
+	}
+
+}
+
+@media all and (max-width:720px) and (min-width: 641px) {
+	#menu-slide-icon {
+		visibility: visible;
+	}
+	#landing-header {
+		visibility: hidden;
+	}
+	#comp-title {
+		font-size: 3rem !important;
+	}
+	#media-links {
+		visibility: hidden !important;
+	}
+	#site-email {
+		color: white !important;
+		font-weight: 500 !important;
+		margin-top: 10px !important;
+		margin-bottom: 30px !important;
+	}
+}
+
+@media all and (max-width: 640px) and (min-width: 480px) {
+
+	#padding-menu {
+		visibility: hidden;
+	}
+	#menu-slide-icon {
+		 
+	}
+	#landing-header {
+		visibility: hidden;
+	}
+
+	#comp-title {
+		margin-top: -40px;
+		font-size: 2rem !important;
+	}
+	#media-links {
+		visibility: hidden !important;
+	}
+	#site-email {
+		color: white !important;
+		font-weight: 500 !important;
+		margin-top: 10px !important;
+		margin-bottom: 65px !important;
+	}
+}
+
+@media all and (max-width: 479px) {
+	#LC-What, #LC-Who, #LC-Press, #LC-Contact {
+		padding-top: 105px;
+		margin-bottom: 0px;
+		line-height: 100% !important;
+		height: auto !important;
+		padding-bottom: 35px !important;
+	}
+	#LC-What, #LC-Press, #LC-Contact {
+	}
+	.border-c {
+		margin: 0px auto !important;
+	}
+	#bg-Press {
+		background: none !important;
+	}
+	#LC-Press {
+		background: none #5c02c2 !important;
+	}
+	#BG-Gradient {
+		display: none;
+	}
+	#LC-Contact {
+		margin-top: -2px;
+	}
+	#left-column > p, #right-column > p {
+		font-size: 0.8rem !important;
+	}
+	#site-email {
+		margin-bottom: 60px;
+		color: white !important;
+		font-weight: 300px !important;
+	}
+	#landing-header {
+		visibility: hidden;
+	}
+	#press-header {
+		font-size: 1.5rem !important;
+		font-weight: 300 !important;
+		line-height: 100% !important;
+	}
+	#comp-title {
+		margin-top: -40px;
+		font-size: 2rem !important;
+	}
+	#comp-desc {
+		font-size: 1.5rem !important;
+	}
+
+	#mission-head, #what-head {
+		 
+			font-size: 1.2rem !important;
+			letter-spacing: 1px !important;
+			font-weight: bolder !important;
+			margin-top: -10px !important;
+		
+	}
+	#media-links {
+		visibility: hidden !important;
+	}
+	
+
+	#about-who, #about-what {
+		font-size: 0.8rem !important;
+		font-weight: bolder !important;
+	}
+
+	#bg-walk, #bg-bridge {
+		display: none;
+	}
+	#lc-contact-title {
+		font-size: 1.2rem !important;
+	}
+	.msg-content > p {		
+		font-size: 0.825rem !important;	
+	}
+	#press-message > span {
+		font-size: 0.95rem !important;
+	}
+	#press-message {
+		color: #fff !important;
+		font-size: 0.8rem !important;
+	}
+
+	input[type="text"]{
+		padding: 15px !important;
+		height: 30px !important;
+	}
+
+	input[type="submit"] {
+		font-size: 1rem !important;
+		padding: 5px !important;
+	}
+
+
+}  /*Closes 479 min-width media

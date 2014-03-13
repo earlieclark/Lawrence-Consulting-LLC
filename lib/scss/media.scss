@@ -1,0 +1,150 @@
+// Ipad Query
+
+
+@media screen and (min-width: 1025px) {
+	#menu-slide-icon {
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 721px) {
+	#menu-slide-icon {
+		visibility: hidden;
+	}
+	#landing-nav > li {
+		font-size: 0.825rem !important;
+	}
+	#bg-walk, #bg-bridge {
+		height: 250px !important;
+		width: 250px !important;
+	}
+	#comp-title {
+		font-size: 4rem !important;
+		text-align: center;
+	}
+	#land-page > hr {
+		margin: 20px auto;
+	}
+	#comp-desc {
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 736px) and (min-width: 721px) {
+	#landing-nav > li {
+		font-size: 0.78rem !important;
+	}
+
+}
+
+@media screen and (max-width:720px) and (min-width: 641px) {
+	#menu-slide-icon {
+		visibility: visible;
+	}
+	#landing-header {
+		visibility: hidden;
+	}
+	#comp-title {
+		font-size: 3rem !important;
+	}
+
+
+}
+
+@media screen and (max-width: 640px) and (min-width: 480px) {
+
+	#padding-menu {
+		visibility: hidden;
+	}
+	#menu-slide-icon {
+		 
+	}
+	#landing-header {
+		visibility: hidden;
+	}
+
+	#comp-title {
+		margin-top: -40px;
+		font-size: 2rem !important;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	#BG-Gradient {
+		display: none;
+	}
+	#left-column > p, #right-column > p {
+		font-size: 0.8rem !important;
+	}
+	#site-email {
+		margin-bottom: 60px;
+		color: $primary_white !important;
+		font-weight: 300px;
+	}
+	#landing-header {
+		visibility: hidden;
+	}
+	#press-header {
+		font-size: 1.5rem !important;
+	}
+	#comp-title {
+		margin-top: -40px;
+		font-size: 2rem !important;
+	}
+	#comp-desc {
+		font-size: 1.5rem !important;
+	}
+
+	#mission-header {
+		h2 {
+			font-size: 1.2rem !important;
+			letter-spacing: 1px !important;
+			font-weight: bolder !important;
+			margin-top: -10px !important;
+		}
+	}
+	#media-links {
+		visibility: hidden !important;
+	}
+	#what-header {
+		h2 {
+			font-size: 1.2rem !important;
+			letter-spacing: 1px !important;
+			font-weight: bolder !important;
+			margin-top: -10px !important;
+		}
+	}
+
+	#about-who, #about-what {
+		font-size: 0.8rem !important;
+		font-weight: bolder !important;
+	}
+
+	#bg-walk, #bg-bridge {
+		display: none;
+	}
+	#lc-contact-title {
+		font-size: 1.2rem !important;
+	}
+	.msg-content {
+		p {
+			font-size: 0.825rem !important;
+		}
+	}
+	#press-message > span {
+		font-size: 0.95rem !important;
+	}
+
+	input[type="text"]{
+		padding: 15px !important;
+		height: 30px !important;
+	}
+
+	input[type="submit"] {
+		font-size: 1rem !important;
+		padding: 5px !important;
+	}
+
+
+} // Closes 479 min-width media
