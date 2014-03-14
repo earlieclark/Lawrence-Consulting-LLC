@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lawrence Consulting LLC</title>
-    <link rel="shortcut icon" href="/lib/img/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="lib/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="lib/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="lib/css/foundation.min.css"/>
     <link rel="stylesheet" type="text/css" href="lib/css/screen.css">
     <link rel="stylesheet" type="text/css" href="lib/css/medias.css">
@@ -22,6 +22,7 @@
 
   <div id="menu-slide-icon" class=""></div>
   <div id="menu-slide-back" class=""></div>
+  <div id="menu-mob-nav"></div>
   <div id="menu-nav-logo"></div>
 
     <div id="LC-Mobile-Nav" class="">
@@ -30,8 +31,9 @@
         <li class="mob-nav" data-location"#LC-Who"><a href="#LC-Who">Who We Are</a></li>
         <li class="mob-nav" data-location"#LC-What"><a href="#LC-What">What We Do</a></li>
         <li class="mob-nav" data-location"#LC-Press"><a href="#LC-Press">Press</a></li>
-        <li class="mob-nav" data-location"#LC-Contact"><a href="#LC-Contact">Contact</a></li>
+        <li class="mob-nav" data-location"#LC-Contact-Container"><a href="#LC-Contact-Container">Contact</a></li>
       </ul>
+      <p id="LC-Mob-Tel">Tel: 919-208-6540</p>
       <ul id="LC-Mob-Soc">
         <li><a href="http://www.instagram.com/lawrenceconsulting" target="_blank"><img src="lib/img/ico-instagram.png"></a></li>
         <li><a href="http://www.facebook.com/lawrenceconsulting" target="_blank"><img src="lib/img/ico-facebook.png"></a></li>
@@ -95,7 +97,7 @@
       </div>
       <div id="lc-who" class="row">
         <div class="small-8 small-centered columns" id="about-content">
-          <p id="about-who">At Lawrence Consulting, we individualize those values and bridge the gap between generic advertising and marketing. Through social and community based programs, we help companies personalize their message and brand, while simultaneously giving back to the community and increasing their social awareness, responsibility and image currency. We understand each company is unique and different, and as such we customize our solutions to meet the individual needs and goals of each company, and help them achieve maximum results.</p>
+          <p id="about-who">At Lawrence consulting, our aim is to illuminate and individualize those values that are dear to your company and at the core of its existence. We bridge the gap between generic advertising and marketing by taking a more personal and wholistic approach. We understand each company is unique and different, and as such we customize our solutions to meet the individual needs and goals of each company, and help them achieve maximum results.</p>
         </div>       
         </div>
         <div class="row">
@@ -115,8 +117,14 @@
       </div>
       <div id="lc-about" class="row">
         <div class="small-8 small-centered columns" id="what-content">
-          <p id="about-what">We aim to help companies transform themselves into smarter, sharper, and better versions of themselves. We take the two pronged approach in achieving this goal. First we help sharpen the image and perception of those who work for your organization. These people are the first line ambassadors of your brand and what you stand for, and secondly we help the company as a whole understand that  the perception and image of any company are at the core of its existence; these have taken years and in some cases decades to hone and perfect.</p>
+          <h4>Companies</h4>
+          <div class="border-round"></div>
+          <p id="about-what-comp">We aim to help companies transform themselves into smarter, sharper, and better versions of themselves. We take the two pronged approach in achieving this goal. First we help sharpen the image and perception of those who work for your organization. These people are the first line ambassadors of your brand and what you stand for, and secondly we help the company as a whole understand that  the perception and image of any company are at the core of its existence; these have taken years and in some cases decades to hone and perfect. They should be jealously guarded and regularly fine tuned, to adjust to the changing needs and demands of a constantly evolving clientele and customer base.</p>
+          <h4>Individuals</h4>
+          <div class="border-round"></div>
+        <p id="about-what-ind">We also work with individuals on a one on one basis to help them achieve a well rounded and balanced lifestyle. From how you look, to your choice of clothes, to practicing healthy living, to planning, and setting long term life goals. We tailor a customized set of options that help you become that well rounded person.</p>
         </div>
+        
       </div>
       <div class="row">
           <div id="bg-contain" class="small-centered columns">
@@ -151,7 +159,7 @@
       <div id="gradient"></div>
     </div> <!-- Background Gradient Close -->
    
-
+    <div id="LC-Contact-Container">
     <div id="LC-Contact" class="section">
       <div class="mail-top"><div></div></div>
       <div class="row">
@@ -200,12 +208,33 @@
       </div> <!-- Closes Contact Form Section -->
       <div class="row">
         <div id="contact-email" class="small-centered columns">
-          <p id="site-email">info@lawrenceconsultingllc.com</p>
+          <p class="site-email">info@lawrenceconsultingllc.com</p>
         </div>
       </div>
       <div class="row">
-        <div id="media-links" class="small-centered">
-          <ul id="social-media">
+      
+      </div>
+
+       
+
+      <div class="mail-bot"><div></div></div>
+
+
+
+
+    </div> <!-- Closes LC-Contact Section -->
+
+
+    <div id="LC-Footer">
+      <div class="row" id="footer-content">
+        <div class="large-4 medium-4 small-4 columns font" id="left-column">
+          <p>Tel: 919-208-6540</p>
+        </div>
+        <div class="large-4 medium-4 small-4 columns font" id="mid-column">
+
+
+        <div id="media-link" class="small-centered">
+          <ul id="soc-media">
             <li>
               <a href="http://www.facebook.com/" target="_blank">
               <img src="lib/img/ico-facebook.png">
@@ -218,14 +247,8 @@
             </li>
           </ul>
         </div>
-      </div>
 
-       <div id="LC-Footer">
-      <div class="row" id="footer-content">
-        <div class="large-4 medium-4 small-4 columns font" id="left-column">
-          <p>Tel: 555-555-5555</p>
-        </div>
-        <div class="large-4 medium-4 small-4 columns font" id="mid-column">
+
           <p></p>
         </div>
         <div class="large-4 medium-4 small-4 columns font" id="right-column">
@@ -235,14 +258,7 @@
         </div>
       </div>
       </div> <!-- Closes LC-Footer-->
-
-      <div class="mail-bot"><div></div></div>
-
-
-
-
-    </div> <!-- Closes LC-Contact Section -->
-
+      </div> <!-- Closes Contact Container -->
    
   </div> <!-- Closes Body Container --> 
   </body>

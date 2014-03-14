@@ -164,7 +164,8 @@
 				text-align: center;
 				font-size: 1.25rem;
 				font-weight: 300;
-				line-height: 140%
+				line-height: 140%;
+				margin-bottom: 1.5%;
 
 			}
 		}
@@ -205,12 +206,29 @@
 			}
 		}
 		#what-content {
-			p {
+			h4 {
+				font-size: 1.5rem;
+				font-weight: 600;
+				color: $primary_white;
+				text-transform: uppercase;
+			}
+			h4:nth-child(n + 2){
+				margin-top: 5%;
+			}
+			.border-round {
+				width: 7px;
+				height: 7px;
+				background-color: $primary_off_white;
+				border-radius: 50%;
+				margin: 5px auto;
+			}
+			#about-what-comp, #about-what-ind {
 				color: $primary_white;
 				font-size: 1.25rem;
 				text-align: center;
 				font-weight: 100;
 				line-height: 140%;
+				margin-bottom: 1.5%;
 			}
 		}
 		#bg-contain {
@@ -320,6 +338,7 @@
 	display: inline-table;
 	padding-top: 91px;
 	margin-top: -2px !important;
+	overflow: hidden;
 
 	.mail-top {
 	   	height: 0;
@@ -476,12 +495,12 @@
 	.row {
 				#contact-email {
 					p {
-						margin-top: 40px;
+						margin-top: 17px;
 						text-align: center;
 						font-size: 1rem;
-						color: $primary_grey_l;
-						letter-spacing: 5px;
-						font-weight: 100;
+						color: $primary_white;
+						letter-spacing: 3px;
+						font-weight: 300;
 					}
 				}
 				#media-links {
@@ -529,9 +548,7 @@
 	background: $primary_silver;
 	display: inline-block;
 	width: 100%;
-	z-index: 2;
-	bottom: 0;
-	position: absolute;
+	position: relative;
 
 	.row {
 		ul {
@@ -572,8 +589,40 @@
 			text-align: center;
 			font-size: 1rem;
 		}
+
+	#media-link {
+				#soc-media {
+					position: relative;
+					margin: -60px auto;
+					display: table;
+
+					li {
+						height: 60px;
+						width: 60px;
+						border-radius: 50%;
+						background: $primary_black;
+						transition: background 500ms;
+						display: inline-block;
+						position: relative;
+
+						a {
+							position: absolute;
+
+							img {
+								position: absolute;
+								top: 19px;
+								left: -12px;
+							}
+						}
+					}
+					li:hover {
+						background: $primary_purple;
+						cursor: pointer;
+					}
+				}
+			}
 	}
-}
+} /* Closes Footer */
 
 
 // Mobile Menu Nav Settings
@@ -604,6 +653,16 @@
 	top: 0;
 	z-index: 9;
 	border-bottom: 1px solid $primary_silver;
+}
+#menu-mob-nav {
+	background: url('../img/logo-b.png') no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 61px;
+	width: 64px;
+	top: 1px;
+	z-index: 12;
+	right: 14px;
 }
 
 #LC-Mobile-Nav {
@@ -636,12 +695,21 @@
 			background: $primary_purple;
 		}
 	}
+	#LC-Mob-Tel {
+		color: $primary_white;
+		position: absolute;
+		bottom: 155px;
+		width: 100%;
+		text-align: center;
+	}
 
 	#LC-Mob-Soc {
-		display: inline-flex;
 		position: absolute;
 		bottom: 45px;
-		left: 60px;
+		left: 4px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
 
 		li {
 			a {
@@ -652,7 +720,7 @@
 		}
 
 		li:nth-child(n+1) {
-			margin-right: 20px;
+			margin-top: 30px;
 		}
 	}
 	div {
@@ -667,4 +735,9 @@
 			font-weight: 500;
 		}
 	}
+}
+#LC-Contact-Container {
+	height: auto;
+	width: 100%;
+	position: relative;
 }

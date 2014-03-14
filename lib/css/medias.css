@@ -5,8 +5,12 @@
 	#menu-slide-icon {
 		visibility: hidden;
 	}
-	#site-email {
+	.site-email {
 		margin-bottom: 30px !important;
+	}
+
+	#menu-mob-nav {
+		display: none;
 	}
 }
 
@@ -31,7 +35,7 @@
 	#comp-desc {
 		text-align: center;
 	}
-	#site-email {
+	.site-email {
 		margin-top: 10px !important;
 		margin-bottom: 40px !important;
 		font-weight: 500 !important;
@@ -40,6 +44,9 @@
 	#social-media {
 		margin: 4px auto !important;
 	}
+	#menu-mob-nav {
+		display: none;
+	}
 
 }
 
@@ -47,6 +54,10 @@
 @media all and (max-width: 736px) and (min-width: 721px) {
 	#landing-nav > li {
 		font-size: 0.78rem !important;
+	}
+
+	#menu-mob-nav {
+		display: none;
 	}
 
 }
@@ -58,27 +69,38 @@
 	#landing-header {
 		visibility: hidden;
 	}
+	#LC-Footer {
+		display: none;
+	}
 	#comp-title {
 		font-size: 3rem !important;
 	}
 	#media-links {
 		visibility: hidden !important;
 	}
-	#site-email {
+	.site-email {
 		color: white !important;
 		font-weight: 500 !important;
 		margin-top: 10px !important;
 		margin-bottom: 30px !important;
 	}
+
+}
+
+@media all and (max-width: 1023px) and (min-width: 721px) {
+	.site-email {
+	}
 }
 
 @media all and (max-width: 640px) and (min-width: 480px) {
-
+	.mail-top, .mail-bot {
+		display: none;
+	}
 	#padding-menu {
 		visibility: hidden;
 	}
-	#menu-slide-icon {
-		 
+	#BG-Gradient, #LC-Footer {
+		display: none;	 
 	}
 	#landing-header {
 		visibility: hidden;
@@ -91,7 +113,7 @@
 	#media-links {
 		visibility: hidden !important;
 	}
-	#site-email {
+	.site-email {
 		color: white !important;
 		font-weight: 500 !important;
 		margin-top: 10px !important;
@@ -100,6 +122,12 @@
 }
 
 @media all and (max-width: 479px) {
+	.mail-top, .mail-bot {
+		display: none;
+	}
+	#LC-Contact {
+		background-color: #191919 !important;
+	}
 	#LC-What, #LC-Who, #LC-Press, #LC-Contact {
 		padding-top: 105px;
 		margin-bottom: 0px;
@@ -118,7 +146,7 @@
 	#LC-Press {
 		background: none #5c02c2 !important;
 	}
-	#BG-Gradient {
+	#BG-Gradient, #LC-Footer {
 		display: none;
 	}
 	#LC-Contact {
@@ -127,7 +155,7 @@
 	#left-column > p, #right-column > p {
 		font-size: 0.8rem !important;
 	}
-	#site-email {
+	.site-email {
 		margin-bottom: 60px;
 		color: white !important;
 		font-weight: 300px !important;
@@ -159,9 +187,18 @@
 	#media-links {
 		visibility: hidden !important;
 	}
-	
+	#what-content > h4 {
+		font-size: 1rem !important;
+		letter-spacing: 1px;
+	}
+	#what-content > h4:nth-child(n + 2){
+		margin-top: 10% !important;	
+	}
+	.border-round {
+		margin: 9px auto !important;
+	}
 
-	#about-who, #about-what {
+	#about-who, #about-what-comp, #about-what-ind {
 		font-size: 0.8rem !important;
 		font-weight: bolder !important;
 	}
@@ -174,6 +211,7 @@
 	}
 	.msg-content > p {		
 		font-size: 0.825rem !important;	
+		color: white !important;
 	}
 	#press-message > span {
 		font-size: 0.95rem !important;

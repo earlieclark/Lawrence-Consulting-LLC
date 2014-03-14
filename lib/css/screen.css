@@ -2,7 +2,9 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900);
+@import url(http://fonts.googleapis.com/css?family=Nobile:400,700,700italic);
+/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,233 +26,138 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
 @font-face {
   font-family: "Coolvetica";
-  src: url(/lib/fonts/coolvetica.otf) format('opentype');
+  src: url("../fonts/coolvetica.otf");
 }
 
 @font-face {
   font-family: "Biko";
-  src: url(/lib/fonts/biko.woff) format('woff');
+  src: url('/css/fonts/../fonts/biko.woff') format('woff');
 }
 
 @font-face {
   font-family: "Opensans";
-  src: url(/lib/fonts/opensans/bold.ttf) format('truetype');
+  src: url('/css/fonts/../fonts/opensans/bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "MarkMedium";
-  src: url(/lib/fonts/markpromedium.woff) format('woff');
+  src: url("../fonts/markpromedium.woff");
 }
 
 @font-face {
   font-family: "MarkBold";
-  src: url(/lib/fonts/markprobold.woff) format('woff');
+  src: url("../fonts/markprobold.woff");
 }
 
-/* line 22, ../scss/variables.scss */
-html, body {
+@font-face {
+  font-family: "CanterBold";
+  src: url('/css/fonts/../fonts/canterbold.otf') format('opentype');
+}
+
+/* font-family: 'Nobile', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+/* line 34, ../scss/defaults.scss */
+html, body, #LC-Body-Container {
+  position: relative;
   height: 100% !important;
   width: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
-/* line 27, ../scss/variables.scss */
+/* line 40, ../scss/defaults.scss */
+.ui-loader {
+  display: none !important;
+}
+
+/* line 43, ../scss/defaults.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 47, ../scss/defaults.scss */
 .pull-left {
   float: left;
 }
 
-/* line 31, ../scss/variables.scss */
+/* line 51, ../scss/defaults.scss */
 .pull-right {
   float: right;
 }
 
-/* line 35, ../scss/variables.scss */
+/* line 55, ../scss/defaults.scss */
 .clear {
   clear: both;
 }
 
-/* line 1, ../scss/styles.scss */
-.cat-no {
-  font-family: "MarkMedium";
+/* line 58, ../scss/defaults.scss */
+.border {
+  display: block;
+  width: 80px;
+  height: 7px;
+  background: #5c02c2;
   margin: 20px auto;
-  border-radius: 55%;
-  background-color: rgba(100, 160, 133, 0.4);
-  text-shadow: #117864 1px 1px, #117864 2px 2px, #117864 3px 3px, #117864 4px 4px, #117864 5px 5px, #117864 6px 6px, #117864 7px 7px, #117864 8px 8px, #117864 9px 9px, #117864 10px 10px, #117864 11px 11px, #117864 12px 12px, #117864 13px 13px, #117864 14px 14px, #117864 15px 15px, #117864 16px 16px, #117864 17px 17px, #117864 18px 18px, #117864 19px 19px, #117864 20px 20px, #117864 21px 21px, #117864 22px 22px, #117864 23px 23px, #117864 24px 24px, #117864 25px 25px, #117864 26px 26px, #117864 27px 27px, #117864 28px 28px, #117864 29px 29px, #117864 30px 30px, #117864 31px 31px, #117864 32px 32px, #117864 33px 33px, #117864 34px 34px, #117864 35px 35px, #117864 36px 36px, #117864 37px 37px, #117864 38px 38px, #117864 39px 39px, #117864 40px 40px, #117864 41px 41px, #117864 42px 42px, #117864 43px 43px, #117864 44px 44px, #117864 45px 45px, #117964 46px 46px, #117965 47px 47px, #117a65 48px 48px, #117a66 49px 49px, #117b66 50px 50px, #117c67 51px 51px, #117c67 52px 52px, #117d68 53px 53px, #117d68 54px 54px, #117e69 55px 55px, #117f69 56px 56px, #117f6a 57px 57px, #12806a 58px 58px, #12806b 59px 59px, #12816b 60px 60px, #12826c 61px 61px, #12826c 62px 62px, #12836d 63px 63px, #12836d 64px 64px, #12846e 65px 65px, #12856e 66px 66px, #12856f 67px 67px, #12866f 68px 68px, #128670 69px 69px, #128770 70px 70px, #138871 71px 71px, #138871 72px 72px, #138972 73px 73px, #138972 74px 74px, #138a73 75px 75px, #138b73 76px 76px, #138b74 77px 77px, #138c74 78px 78px, #138c75 79px 79px, #138d75 80px 80px, #138e76 81px 81px, #138e76 82px 82px, #138f77 83px 83px, #138f77 84px 84px, #149078 85px 85px, #149178 86px 86px, #149179 87px 87px, #149279 88px 88px, #14927a 89px 89px, #14937a 90px 90px, #14947b 91px 91px, #14947b 92px 92px, #14957c 93px 93px, #14957c 94px 94px, #14967d 95px 95px, #14977d 96px 96px, #14977e 97px 97px, #15987e 98px 98px, #15987f 99px 99px, #15997f 100px 100px, #159a80 101px 101px, #159a80 102px 102px, #159b81 103px 103px, #159b81 104px 104px, #159c82 105px 105px, #159d82 106px 106px, #159d83 107px 107px, #159e83 108px 108px, #159e84 109px 109px, #159f84 110px 110px, #16a085 111px 111px;
-  height: 150px;
-  width: 150px;
-  font-size: 75px;
-  line-height: 150px;
-  text-align: center;
-  overflow: hidden;
 }
 
-/* line 13, ../scss/screen.scss */
-#port-test {
-  height: 200px;
-  width: 200px;
-  background: black;
+/* line 65, ../scss/defaults.scss */
+.bolder {
+  font-size: 7rem;
+  font-family: "MarkBold";
+  letter-spacing: -3px;
+  color: #5c02c2;
 }
 
-/* line 19, ../scss/screen.scss */
-#LC-landing {
-  background: url("../img/bw-3.png") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-/* line 26, ../scss/screen.scss */
-#LC-landing #LC-gradient {
-  background: linear-gradient(45deg, rgba(236, 240, 241, 0.1) 0%, rgba(2, 2, 2, 0.9) 100%);
-  height: 100%;
-}
-/* line 30, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header {
-  background: url("../img/bg-clear.png") repeat-x;
-  background-color: #5c02c2;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-/* line 38, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-padding {
-  width: 80%;
-  margin: 0 auto;
-}
-/* line 43, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-padding #padding-img {
-  display: inline;
-}
-/* line 46, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-padding #padding-img #k-logo {
-  width: 100px;
-}
-/* line 51, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-padding #padding-menu {
-  display: inline;
-}
-/* line 54, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav {
-  display: inline;
-  line-height: 88px;
-}
-/* line 59, ../scss/screen.scss */
-#LC-landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav > li {
-  display: inline;
-  font-size: 20px;
-  margin-left: 20px;
-  font-family: "Opensans";
-}
-/* line 70, ../scss/screen.scss */
-#LC-landing #landing-intro {
-  padding-top: 175px;
-  width: 80%;
-}
-/* line 77, ../scss/screen.scss */
-#LC-landing #landing-intro div p:nth-child(1) {
-  font-size: 5rem;
-  font-family: "Coolvetica";
-  color: white;
-}
-/* line 83, ../scss/screen.scss */
-#LC-landing #landing-intro div p:nth-child(n + 2) {
-  font-size: 30px;
-  font-family: "Opensans";
-  color: white;
-}
-/* line 89, ../scss/screen.scss */
-#LC-landing #landing-intro div hr {
-  width: 80%;
-  height: 2px;
-  border: 0;
-  background: -webkit-linear-gradient(left, rgba(198, 0, 3, 0) 0%, rgba(198, 0, 3, 0.7) 50%, rgba(198, 0, 3, 0) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, rgba(198, 0, 3, 0) 0%, rgba(198, 0, 3, 0.7) 50%, rgba(198, 0, 3, 0) 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, rgba(198, 0, 3, 0) 0%, rgba(198, 0, 3, 0.7) 50%, rgba(198, 0, 3, 0) 100%);
-  /* IE10+ */
-  background: linear-gradient(to right, rgba(198, 0, 3, 0) 0%, rgba(198, 0, 3, 0.7) 50%, rgba(198, 0, 3, 0) 100%);
-  /* W3C */
-}
-/* line 101, ../scss/screen.scss */
-#LC-landing #landing-explore {
-  margin: 19% auto;
-  text-align: center;
-}
-/* line 105, ../scss/screen.scss */
-#LC-landing #landing-explore button {
-  text-transform: uppercase;
-  background: transparent;
-  color: white;
-  padding: 20px;
-  border: 2px solid white;
-}
-/* line 112, ../scss/screen.scss */
-#LC-landing #landing-explore button:hover {
-  background: rgba(255, 255, 255, 0.4);
-  cursor: pointer;
+/* line 71, ../scss/defaults.scss */
+.hidden {
+  display: none;
 }
 
-/* Closes Landing Section */
-/* line 121, ../scss/screen.scss */
-#LC-about {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-}
-/* line 127, ../scss/screen.scss */
-#LC-about #lc-who h1 {
-  margin-top: 50px;
-  font-size: 50px;
-  font-family: "Opensans";
-}
-/* line 133, ../scss/screen.scss */
-#LC-about #lc-who hr {
+/* line 74, ../scss/defaults.scss */
+.hr-tag {
   margin: 10px auto;
   width: 80%;
   height: 2px;
@@ -264,153 +171,696 @@ html, body {
   background: linear-gradient(to right, rgba(198, 0, 3, 0) 0%, rgba(198, 0, 3, 0.7) 50%, rgba(198, 0, 3, 0) 100%);
   /* W3C */
 }
-/* line 146, ../scss/screen.scss */
-#LC-about #lc-what #about-what {
-  font-family: "Biko";
-}
-/* line 150, ../scss/screen.scss */
-#LC-about #lc-what h2 {
-  font-family: "Opensans";
-  font-size: 50px;
-  margin-top: 20px;
-}
-/* line 163, ../scss/screen.scss */
-#LC-about #lc-categories #lc-package-title {
-  font-size: 2.6875rem;
-  text-align: left;
-  font-family: "MarkMedium";
-}
-/* line 168, ../scss/screen.scss */
-#LC-about #lc-categories #lc-package-title span {
-  font-size: 7rem;
-  color: #5c02c2;
-  font-family: "MarkBold";
-  letter-spacing: -3px;
-}
-/* line 176, ../scss/screen.scss */
-#LC-about #lc-categories .lc-category {
-  margin: 50px auto;
-}
-/* line 179, ../scss/screen.scss */
-#LC-about #lc-categories .lc-category .cat-head {
-  font-family: "MarkBold";
-}
 
-/* line 187, ../scss/screen.scss */
-#LC-Press {
-  width: 100%;
-  height: 50%;
-  position: relative;
-  background: url("../img/bg-camera.jpg") no-repeat fixed;
+/* line 12, ../scss/screen.scss */
+#LC-Landing {
+  background: url("../img/bw-3.png") 50% 0 repeat fixed;
   background-size: cover;
+  width: 100%;
+  height: 100% !important;
+  min-height: 100%;
+  position: relative;
+  display: block;
 }
-/* line 193, ../scss/screen.scss */
-#LC-Press .gradient {
+/* line 21, ../scss/screen.scss */
+#LC-Landing #LC-gradient {
   background: linear-gradient(45deg, rgba(236, 240, 241, 0.1) 0%, rgba(2, 2, 2, 0.9) 100%);
   height: 100%;
 }
-/* line 196, ../scss/screen.scss */
+/* line 25, ../scss/screen.scss */
+#LC-Landing #LC-gradient #landing-header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  margin-bottom: 91px;
+  border-bottom: 1px solid #bdc3c7;
+}
+/* line 34, ../scss/screen.scss */
+#LC-Landing #LC-gradient #landing-header #landing-padding {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 39, ../scss/screen.scss */
+#LC-Landing #LC-gradient #landing-header #landing-padding #padding-img {
+  display: inline;
+  background: url("../img/logo-b.png") no-repeat;
+  position: absolute;
+  top: 3px;
+  background-size: contain;
+  height: 91px;
+}
+/* line 47, ../scss/screen.scss */
+#LC-Landing #LC-gradient #landing-header #landing-padding #padding-img #k-logo {
+  width: 100px;
+}
+/* line 52, ../scss/screen.scss */
+#LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu {
+  display: inline;
+}
+/* line 55, ../scss/screen.scss */
+#LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav {
+  display: inline;
+  line-height: 88px;
+}
+/* line 60, ../scss/screen.scss */
+#LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav > li {
+  display: inline;
+  font-size: 1rem;
+  margin-left: 20px;
+  font-family: "MarkMedium";
+  text-transform: uppercase;
+  color: white;
+}
+/* line 67, ../scss/screen.scss */
+#LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav > li a {
+  color: black;
+  transition: color 300ms;
+}
+/* line 72, ../scss/screen.scss */
+#LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav > li > a:hover {
+  color: #95a5a6;
+  cursor: pointer;
+  border-bottom: 2px solid darkgrey;
+}
+/* line 82, ../scss/screen.scss */
+#LC-Landing #landing-intro {
+  padding-top: 175px;
+  width: 100%;
+}
+/* line 88, ../scss/screen.scss */
+#LC-Landing #landing-intro .row .columns p:nth-child(1) {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: white;
+}
+/* line 94, ../scss/screen.scss */
+#LC-Landing #landing-intro .row .columns p:nth-child(n + 2) {
+  font-size: 30px;
+  color: white;
+}
+/* line 99, ../scss/screen.scss */
+#LC-Landing #landing-intro .row .columns hr {
+  width: 80%;
+  height: 10px;
+  border: 0;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+}
+/* line 112, ../scss/screen.scss */
+#LC-Landing #landing-explore {
+  margin: 19% auto;
+  text-align: center;
+}
+/* line 118, ../scss/screen.scss */
+#LC-Landing #landing-explore a button {
+  text-transform: uppercase;
+  background: transparent;
+  letter-spacing: 3px;
+  color: white;
+  padding: 20px;
+  border: 1px solid white;
+}
+/* line 126, ../scss/screen.scss */
+#LC-Landing #landing-explore a button:hover {
+  background: rgba(93, 13, 186, 0.8);
+  cursor: pointer;
+}
+
+/* Closes Landing Section */
+/* line 139, ../scss/screen.scss */
+#LC-Who {
+  text-align: center;
+  width: 100%;
+  height: auto !important;
+  min-height: 100%;
+  overflow-y: hidden;
+  margin: 0 auto;
+  padding-top: 91px;
+  background: white;
+  display: block;
+}
+/* line 153, ../scss/screen.scss */
+#LC-Who .row #mission-header h2 {
+  margin-top: 4%;
+  font-size: 4rem;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+/* line 163, ../scss/screen.scss */
+#LC-Who .row #about-content #about-who {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 140%;
+  margin-bottom: 1.5%;
+}
+/* line 174, ../scss/screen.scss */
+#LC-Who .row #bg-contain #bg-walk {
+  height: 300px;
+  width: 300px;
+  background: url("../img/bg-2.jpg") no-repeat center;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+/* line 186, ../scss/screen.scss */
+#LC-What {
+  height: auto !important;
+  min-height: 100%;
+  overflow-y: hidden;
+  width: 100%;
+  padding-top: 91px;
+  background-color: black;
+  text-align: center;
+}
+/* line 198, ../scss/screen.scss */
+#LC-What .row #what-header h2 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-top: 4%;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: white;
+}
+/* line 209, ../scss/screen.scss */
+#LC-What .row #what-content h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 215, ../scss/screen.scss */
+#LC-What .row #what-content h4:nth-child(n + 2) {
+  margin-top: 5%;
+}
+/* line 218, ../scss/screen.scss */
+#LC-What .row #what-content .border-round {
+  width: 7px;
+  height: 7px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  margin: 5px auto;
+}
+/* line 225, ../scss/screen.scss */
+#LC-What .row #what-content #about-what-comp, #LC-What .row #what-content #about-what-ind {
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 100;
+  line-height: 140%;
+  margin-bottom: 1.5%;
+}
+/* line 235, ../scss/screen.scss */
+#LC-What .row #bg-contain #bg-bridge {
+  height: 300px;
+  width: 300px;
+  background: url("../img/bg-1.jpg") no-repeat center;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+/* line 247, ../scss/screen.scss */
+#LC-Press {
+  width: 100%;
+  height: 100% !important;
+  position: relative;
+  background: url("../img/bg-bohek.png") 50% 0 no-repeat fixed;
+  min-height: 100%;
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+  display: inline-block;
+  padding-top: 91px;
+}
+/* line 258, ../scss/screen.scss */
+#LC-Press .gradient {
+  background: linear-gradient(45deg, rgba(236, 240, 241, 0.9) 0%, rgba(2, 2, 2, 0.9) 100%);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+/* line 265, ../scss/screen.scss */
 #LC-Press .gradient #bg-Press {
   background: url("../img/bg-pattern.png");
   height: 100%;
 }
-/* line 202, ../scss/screen.scss */
-#LC-Press .gradient #bg-Press .row .columns p {
-  margin-top: 25%;
+/* line 271, ../scss/screen.scss */
+#LC-Press .gradient #bg-Press .row .columns #press-header {
+  margin-top: 50%;
   color: white;
-  font-size: 4rem;
-  font-family: "Coolvetica";
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 0.25rem;
+}
+/* line 278, ../scss/screen.scss */
+#LC-Press .gradient #bg-Press .row .columns #press-message {
+  margin-top: 2%;
+  color: #bdc3c7;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 150%;
+}
+/* line 285, ../scss/screen.scss */
+#LC-Press .gradient #bg-Press .row .columns #press-message span {
+  font-weight: bold;
+  color: white;
+}
+/* line 291, ../scss/screen.scss */
+#LC-Press .gradient #bg-Press .row .columns #press-button {
+  margin-top: 5%;
+  text-align: center;
+}
+/* line 297, ../scss/screen.scss */
+#LC-Press .gradient #bg-Press .row .columns #press-button a button {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+  padding: 20px;
+  border: 1px solid white;
+}
+/* line 305, ../scss/screen.scss */
+#LC-Press .gradient #bg-Press .row .columns #press-button a button:hover {
+  background: rgba(93, 13, 186, 0.8);
+  cursor: pointer;
 }
 
-/* line 214, ../scss/screen.scss */
+/* line 317, ../scss/screen.scss */
+#BG-Gradient {
+  height: 106px;
+  width: 100%;
+  position: relative;
+  background: url("../img/bg-gradient.png") repeat-x center bottom transparent;
+}
+/* line 323, ../scss/screen.scss */
+#BG-Gradient #gradient {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: -106px;
+  z-index: 5;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.9) 100%);
+  /* W3C */
+}
+
+/* line 333, ../scss/screen.scss */
 #LC-Contact {
   width: 100%;
   height: 100% !important;
+  background-color: #2a2a2a;
+  position: relative;
+  display: inline-table;
+  padding-top: 91px;
+  margin-top: -2px !important;
+  overflow: hidden;
 }
-/* line 218, ../scss/screen.scss */
+/* line 343, ../scss/screen.scss */
+#LC-Contact .mail-top {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 550px;
+  padding-left: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+/* line 352, ../scss/screen.scss */
+#LC-Contact .mail-top div {
+  border-left: 1000px solid rgba(0, 0, 0, 0);
+  border-right: 1000px solid rgba(0, 0, 0, 0);
+  border-top: 550px solid black;
+  height: 0;
+  left: 50%;
+  margin-left: -1000px;
+  position: absolute;
+  width: 0;
+}
+/* line 365, ../scss/screen.scss */
+#LC-Contact .mail-bot {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 600px;
+  padding-left: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 374, ../scss/screen.scss */
+#LC-Contact .mail-bot div {
+  border-left: 1000px solid rgba(0, 0, 0, 0);
+  border-right: 1000px solid rgba(0, 0, 0, 0);
+  border-bottom: 600px solid #3f3f3f;
+  height: 0;
+  left: 50%;
+  margin-left: -1000px;
+  position: absolute;
+  width: 0;
+}
+/* line 386, ../scss/screen.scss */
+#LC-Contact .row {
+  position: relative;
+  z-index: 5;
+}
+/* line 390, ../scss/screen.scss */
 #LC-Contact .row #lc-contact-us {
   padding: 20px;
 }
-/* line 221, ../scss/screen.scss */
+/* line 393, ../scss/screen.scss */
 #LC-Contact .row #lc-contact-us #lc-contact-title {
-  font-size: 2.6875rem;
-  text-align: right;
-  font-family: "MarkMedium";
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
 }
-/* line 226, ../scss/screen.scss */
-#LC-Contact .row #lc-contact-us #lc-contact-title span {
-  font-size: 7rem;
-  color: #5c02c2;
-  font-family: "MarkBold";
-  letter-spacing: -3px;
+/* line 403, ../scss/screen.scss */
+#LC-Contact .msg-contain {
+  z-index: 5;
+  position: relative;
+  padding: 20px;
 }
-/* line 240, ../scss/screen.scss */
-#LC-Contact .row .columns form .row .columns {
+/* line 408, ../scss/screen.scss */
+#LC-Contact .msg-contain .msg-content p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+  text-align: center;
+  color: #bdc3c7;
+}
+/* line 420, ../scss/screen.scss */
+#LC-Contact #contact-form {
+  position: relative;
+  z-index: 5;
+}
+/* line 428, ../scss/screen.scss */
+#LC-Contact #contact-form .columns form .row .columns {
   position: relative;
 }
-/* line 243, ../scss/screen.scss */
-#LC-Contact .row .columns form .row .columns .error {
+/* line 431, ../scss/screen.scss */
+#LC-Contact #contact-form .columns form .row .columns .error {
   position: absolute;
   right: 35px;
   top: 20px;
+  font-family: "MarkBold";
 }
-/* line 248, ../scss/screen.scss */
-#LC-Contact .row .columns form .row .columns input[type="text"] {
+/* line 437, ../scss/screen.scss */
+#LC-Contact #contact-form .columns form .row .columns input[type="text"] {
   padding: 15px;
   height: 60px;
   font-family: "MarkBold";
+  background: rgba(255, 255, 255, 0.8);
+  border: 0;
+  box-shadow: none;
 }
-/* line 253, ../scss/screen.scss */
-#LC-Contact .row .columns form .row .columns textarea {
+/* line 446, ../scss/screen.scss */
+#LC-Contact #contact-form .columns form .row .columns input[type="text"]::-webkit-input-placeholder, #LC-Contact #contact-form .columns form .row .columns textarea::-webkit-input-placeholder {
+  color: #5c02c2;
+}
+/* line 449, ../scss/screen.scss */
+#LC-Contact #contact-form .columns form .row .columns textarea {
   padding: 15px;
   resize: none;
   height: 100px;
   font-family: "MarkBold";
+  border: 0;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.8);
 }
-/* line 259, ../scss/screen.scss */
-#LC-Contact .row .columns form .row .columns input[type="submit"] {
-  font-family: "MarkBold";
+/* line 458, ../scss/screen.scss */
+#LC-Contact #contact-form .columns form .row .columns input[type="submit"] {
   font-size: 1.5em;
-  color: black;
+  color: white;
   border: 0px;
   padding: 15px;
   width: 100%;
   text-transform: uppercase;
-  background: #95a5a6;
+  background: transparent;
+  border: 1px solid white;
+  transition: background 500ms;
+  letter-spacing: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
-/* line 270, ../scss/screen.scss */
-#LC-Contact .row .columns form .row .columns input[type="submit"]:hover {
+/* line 473, ../scss/screen.scss */
+#LC-Contact #contact-form .columns form .row .columns input[type="submit"]:hover {
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.1);
+  background: #5c02c2;
+}
+/* line 484, ../scss/screen.scss */
+#LC-Contact #contact-form .columns #contact-msg h4 {
+  margin-top: 3%;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+/* line 497, ../scss/screen.scss */
+#LC-Contact .row #contact-email p {
+  margin-top: 17px;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+/* line 507, ../scss/screen.scss */
+#LC-Contact .row #media-links #social-media {
+  position: relative;
+  margin: 10px auto;
+  display: table;
+}
+/* line 512, ../scss/screen.scss */
+#LC-Contact .row #media-links #social-media li {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: black;
+  transition: background 500ms;
+  display: inline-block;
+  margin-left: 25px;
+  position: relative;
+}
+/* line 522, ../scss/screen.scss */
+#LC-Contact .row #media-links #social-media li a {
+  position: absolute;
+}
+/* line 525, ../scss/screen.scss */
+#LC-Contact .row #media-links #social-media li a img {
+  position: absolute;
+  top: 19px;
+  left: 19px;
+}
+/* line 532, ../scss/screen.scss */
+#LC-Contact .row #media-links #social-media li:hover {
+  background: #5c02c2;
+  cursor: pointer;
 }
 
-/* line 282, ../scss/screen.scss */
+/* line 545, ../scss/screen.scss */
 #LC-Footer {
   border-top: 10px solid;
   padding: 30px;
   background: #bdc3c7;
   display: inline-block;
-}
-/* line 289, ../scss/screen.scss */
-#LC-Footer .row ul {
-  margin-top: -85px;
-  margin-bottom: 30px;
-}
-/* line 292, ../scss/screen.scss */
-#LC-Footer .row ul li {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background: black;
-  display: inline-block;
-  margin-left: 50px;
+  width: 100%;
   position: relative;
 }
-/* line 300, ../scss/screen.scss */
+/* line 554, ../scss/screen.scss */
+#LC-Footer .row ul {
+  position: relative;
+  z-index: 5;
+  margin-top: -65px;
+  margin-bottom: 30px;
+}
+/* line 559, ../scss/screen.scss */
+#LC-Footer .row ul li {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: black;
+  transition: background 500ms;
+  display: inline-block;
+  margin-left: 25px;
+  position: relative;
+}
+/* line 568, ../scss/screen.scss */
 #LC-Footer .row ul li a {
   position: absolute;
 }
-/* line 310, ../scss/screen.scss */
-#LC-Footer .row #right-column p {
-  text-align: right;
+/* line 571, ../scss/screen.scss */
+#LC-Footer .row ul li a img {
+  position: absolute;
+  top: 19px;
+  left: 19px;
+}
+/* line 578, ../scss/screen.scss */
+#LC-Footer .row ul li:hover {
+  background: #5c02c2;
+  cursor: pointer;
+}
+/* line 587, ../scss/screen.scss */
+#LC-Footer #footer-content .font {
+  font-family: "MarkMedium";
+  text-align: center;
+  font-size: 1rem;
+}
+/* line 594, ../scss/screen.scss */
+#LC-Footer #footer-content #media-link #soc-media {
+  position: relative;
+  margin: -60px auto;
+  display: table;
+}
+/* line 599, ../scss/screen.scss */
+#LC-Footer #footer-content #media-link #soc-media li {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: black;
+  transition: background 500ms;
+  display: inline-block;
+  position: relative;
+}
+/* line 608, ../scss/screen.scss */
+#LC-Footer #footer-content #media-link #soc-media li a {
+  position: absolute;
+}
+/* line 611, ../scss/screen.scss */
+#LC-Footer #footer-content #media-link #soc-media li a img {
+  position: absolute;
+  top: 19px;
+  left: -12px;
+}
+/* line 618, ../scss/screen.scss */
+#LC-Footer #footer-content #media-link #soc-media li:hover {
+  background: #5c02c2;
+  cursor: pointer;
+}
+
+/* Closes Footer */
+/* line 630, ../scss/screen.scss */
+#menu-slide-icon {
+  position: fixed;
+  top: 17px;
+  left: 30px;
+  background: url("../img/menu_push_icon.png");
+  -webkit-filter: invert(0);
+  transition: -webkit-filter 300ms;
+  height: 25px;
+  width: 31px;
+  z-index: 12;
+}
+
+/* line 642, ../scss/screen.scss */
+#menu-slide-icon:hover {
+  -webkit-filter: invert(0.9);
+  filter: invert(0.9);
+  cursor: pointer;
+}
+
+/* line 648, ../scss/screen.scss */
+#menu-slide-back {
+  height: 60px;
+  width: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+/* line 657, ../scss/screen.scss */
+#menu-mob-nav {
+  background: url("../img/logo-b.png") no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 61px;
+  width: 64px;
+  top: 1px;
+  z-index: 12;
+  right: 14px;
+}
+
+/* line 668, ../scss/screen.scss */
+#LC-Mobile-Nav {
+  position: fixed;
+  left: -180px;
+  top: 0;
+  height: 100%;
+  width: 180px;
+  background: black;
+  z-index: 8;
+}
+/* line 677, ../scss/screen.scss */
+#LC-Mobile-Nav #LC-Mobile-Nav-Links {
+  list-style: none;
+  margin-top: 91px;
+}
+/* line 681, ../scss/screen.scss */
+#LC-Mobile-Nav #LC-Mobile-Nav-Links .mob-nav {
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+}
+/* line 689, ../scss/screen.scss */
+#LC-Mobile-Nav #LC-Mobile-Nav-Links .mob-nav a {
+  color: white;
+}
+/* line 693, ../scss/screen.scss */
+#LC-Mobile-Nav #LC-Mobile-Nav-Links .mob-nav:hover {
+  cursor: pointer;
+  background: #5c02c2;
+}
+/* line 698, ../scss/screen.scss */
+#LC-Mobile-Nav #LC-Mob-Tel {
+  color: white;
+  position: absolute;
+  bottom: 155px;
+  width: 100%;
+  text-align: center;
+}
+/* line 706, ../scss/screen.scss */
+#LC-Mobile-Nav #LC-Mob-Soc {
+  position: absolute;
+  bottom: 45px;
+  left: 4px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 722, ../scss/screen.scss */
+#LC-Mobile-Nav #LC-Mob-Soc li:nth-child(n+1) {
+  margin-top: 30px;
+}
+/* line 727, ../scss/screen.scss */
+#LC-Mobile-Nav div #copyright-nav {
+  text-align: center;
+  font-weight: 100;
+  color: white;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  font-weight: 500;
+}
+
+/* line 739, ../scss/screen.scss */
+#LC-Contact-Container {
+  height: auto;
+  width: 100%;
+  position: relative;
 }
