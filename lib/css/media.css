@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$primary_white".
-        on line 82 of /Users/main/Lawrence-Consulting-LLC/lib/scss/media.scss
+        on line 81 of /Users/main/Lawrence-Consulting-LLC/lib/scss/media.scss
 
 Backtrace:
-/Users/main/Lawrence-Consulting-LLC/lib/scss/media.scss:82
+/Users/main/Lawrence-Consulting-LLC/lib/scss/media.scss:81
 /Library/Ruby/Gems/1.8/gems/sass-3.2.14/lib/sass/../sass/script/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.14/lib/sass/../sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.14/lib/sass/../sass/script/list.rb:71:in `_perform'
@@ -94,4 +94,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$primary_white\".\A         on line 82 of /Users/main/Lawrence-Consulting-LLC/lib/scss/media.scss"; }
+  content: "Syntax error: Undefined variable: \"$primary_white\".\A         on line 81 of /Users/main/Lawrence-Consulting-LLC/lib/scss/media.scss"; }

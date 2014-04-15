@@ -177,17 +177,18 @@ body {
   background: url("../img/bw-3.png") 50% 0 repeat fixed;
   background-size: cover;
   width: 100%;
-  height: 100% !important;
+  height: auto !important;
   min-height: 100%;
   position: relative;
   display: block;
 }
 /* line 21, ../scss/screen.scss */
 #LC-Landing #LC-gradient {
-  background: linear-gradient(45deg, rgba(236, 240, 241, 0.1) 0%, rgba(2, 2, 2, 0.9) 100%);
+  background: linear-gradient(45deg, rgba(2, 2, 2, 0.5) 0%, rgba(2, 2, 2, 0.9) 90%);
   height: 100%;
+  width: 100%;
 }
-/* line 25, ../scss/screen.scss */
+/* line 26, ../scss/screen.scss */
 #LC-Landing #LC-gradient #landing-header {
   background-color: white;
   position: fixed;
@@ -197,12 +198,12 @@ body {
   margin-bottom: 91px;
   border-bottom: 1px solid #bdc3c7;
 }
-/* line 34, ../scss/screen.scss */
+/* line 35, ../scss/screen.scss */
 #LC-Landing #LC-gradient #landing-header #landing-padding {
   width: 80%;
   margin: 0 auto;
 }
-/* line 39, ../scss/screen.scss */
+/* line 40, ../scss/screen.scss */
 #LC-Landing #LC-gradient #landing-header #landing-padding #padding-img {
   display: inline;
   background: url("../img/logo-b.png") no-repeat;
@@ -211,20 +212,20 @@ body {
   background-size: contain;
   height: 91px;
 }
-/* line 47, ../scss/screen.scss */
+/* line 48, ../scss/screen.scss */
 #LC-Landing #LC-gradient #landing-header #landing-padding #padding-img #k-logo {
   width: 100px;
 }
-/* line 52, ../scss/screen.scss */
+/* line 53, ../scss/screen.scss */
 #LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu {
   display: inline;
 }
-/* line 55, ../scss/screen.scss */
+/* line 56, ../scss/screen.scss */
 #LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav {
   display: inline;
   line-height: 88px;
 }
-/* line 60, ../scss/screen.scss */
+/* line 61, ../scss/screen.scss */
 #LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav > li {
   display: inline;
   font-size: 1rem;
@@ -233,34 +234,34 @@ body {
   text-transform: uppercase;
   color: white;
 }
-/* line 67, ../scss/screen.scss */
+/* line 68, ../scss/screen.scss */
 #LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav > li a {
   color: black;
   transition: color 300ms;
 }
-/* line 72, ../scss/screen.scss */
+/* line 73, ../scss/screen.scss */
 #LC-Landing #LC-gradient #landing-header #landing-padding #padding-menu #landing-nav > li > a:hover {
   color: #95a5a6;
   cursor: pointer;
   border-bottom: 2px solid darkgrey;
 }
-/* line 82, ../scss/screen.scss */
+/* line 83, ../scss/screen.scss */
 #LC-Landing #landing-intro {
   padding-top: 175px;
   width: 100%;
 }
-/* line 88, ../scss/screen.scss */
+/* line 89, ../scss/screen.scss */
 #LC-Landing #landing-intro .row .columns p:nth-child(1) {
   font-size: 5rem;
   font-weight: bolder;
   color: white;
 }
-/* line 94, ../scss/screen.scss */
+/* line 95, ../scss/screen.scss */
 #LC-Landing #landing-intro .row .columns p:nth-child(n + 2) {
   font-size: 30px;
   color: white;
 }
-/* line 99, ../scss/screen.scss */
+/* line 100, ../scss/screen.scss */
 #LC-Landing #landing-intro .row .columns hr {
   width: 80%;
   height: 10px;
@@ -274,12 +275,12 @@ body {
   background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
   /* Chrome10+,Safari5.1+ */
 }
-/* line 112, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 #LC-Landing #landing-explore {
   margin: 19% auto;
   text-align: center;
 }
-/* line 118, ../scss/screen.scss */
+/* line 119, ../scss/screen.scss */
 #LC-Landing #landing-explore a button {
   text-transform: uppercase;
   background: transparent;
@@ -288,14 +289,14 @@ body {
   padding: 20px;
   border: 1px solid white;
 }
-/* line 126, ../scss/screen.scss */
+/* line 127, ../scss/screen.scss */
 #LC-Landing #landing-explore a button:hover {
-  background: rgba(93, 13, 186, 0.8);
+  background: rgba(92, 2, 194, 0.8);
   cursor: pointer;
 }
 
 /* Closes Landing Section */
-/* line 139, ../scss/screen.scss */
+/* line 140, ../scss/screen.scss */
 #LC-Who {
   text-align: center;
   width: 100%;
@@ -318,22 +319,24 @@ body {
 }
 /* line 163, ../scss/screen.scss */
 #LC-Who .row #about-content #about-who {
-  text-align: center;
+  text-align: justify;
+  text-indent: 5%;
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 140%;
   margin-bottom: 1.5%;
 }
-/* line 174, ../scss/screen.scss */
+/* line 175, ../scss/screen.scss */
 #LC-Who .row #bg-contain #bg-walk {
-  height: 300px;
-  width: 300px;
-  background: url("../img/bg-2.jpg") no-repeat center;
-  border-radius: 50%;
+  height: 225px;
+  width: 225px;
+  background: url("../img/bg-1.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 100%;
   margin: 10px auto;
 }
 
-/* line 186, ../scss/screen.scss */
+/* line 189, ../scss/screen.scss */
 #LC-What {
   height: auto !important;
   min-height: 100%;
@@ -343,7 +346,7 @@ body {
   background-color: black;
   text-align: center;
 }
-/* line 198, ../scss/screen.scss */
+/* line 201, ../scss/screen.scss */
 #LC-What .row #what-header h2 {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
@@ -353,18 +356,18 @@ body {
   letter-spacing: 5px;
   color: white;
 }
-/* line 209, ../scss/screen.scss */
+/* line 212, ../scss/screen.scss */
 #LC-What .row #what-content h4 {
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
   text-transform: uppercase;
 }
-/* line 215, ../scss/screen.scss */
+/* line 218, ../scss/screen.scss */
 #LC-What .row #what-content h4:nth-child(n + 2) {
   margin-top: 5%;
 }
-/* line 218, ../scss/screen.scss */
+/* line 221, ../scss/screen.scss */
 #LC-What .row #what-content .border-round {
   width: 7px;
   height: 7px;
@@ -372,28 +375,34 @@ body {
   border-radius: 50%;
   margin: 5px auto;
 }
-/* line 225, ../scss/screen.scss */
+/* line 228, ../scss/screen.scss */
 #LC-What .row #what-content #about-what-comp, #LC-What .row #what-content #about-what-ind {
   color: white;
   font-size: 1.25rem;
-  text-align: center;
+  text-align: justify;
+  text-indent: 5%;
   font-weight: 100;
   line-height: 140%;
   margin-bottom: 1.5%;
 }
-/* line 235, ../scss/screen.scss */
+/* line 238, ../scss/screen.scss */
+#LC-What .row #bg-contain {
+  padding-bottom: 15px;
+}
+/* line 241, ../scss/screen.scss */
 #LC-What .row #bg-contain #bg-bridge {
-  height: 300px;
-  width: 300px;
-  background: url("../img/bg-1.jpg") no-repeat center;
-  border-radius: 50%;
+  height: 225px;
+  width: 225px;
+  background: url("../img/bg-2.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 100%;
   margin: 10px auto;
 }
 
-/* line 247, ../scss/screen.scss */
+/* line 255, ../scss/screen.scss */
 #LC-Press {
   width: 100%;
-  height: 100% !important;
+  height: auto !important;
   position: relative;
   background: url("../img/bg-bohek.png") 50% 0 no-repeat fixed;
   min-height: 100%;
@@ -402,7 +411,7 @@ body {
   display: inline-block;
   padding-top: 91px;
 }
-/* line 258, ../scss/screen.scss */
+/* line 266, ../scss/screen.scss */
 #LC-Press .gradient {
   background: linear-gradient(45deg, rgba(236, 240, 241, 0.9) 0%, rgba(2, 2, 2, 0.9) 100%);
   height: 100%;
@@ -410,39 +419,44 @@ body {
   width: 100%;
   top: 0;
 }
-/* line 265, ../scss/screen.scss */
+/* line 273, ../scss/screen.scss */
 #LC-Press .gradient #bg-Press {
   background: url("../img/bg-pattern.png");
   height: 100%;
 }
-/* line 271, ../scss/screen.scss */
+/* line 279, ../scss/screen.scss */
 #LC-Press .gradient #bg-Press .row .columns #press-header {
-  margin-top: 50%;
+  margin-top: 25%;
   color: white;
-  font-size: 3rem;
-  font-weight: 100;
-  letter-spacing: 0.25rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
 }
-/* line 278, ../scss/screen.scss */
+/* line 288, ../scss/screen.scss */
+#LC-Press .gradient #bg-Press .row .columns .border {
+  background: white;
+}
+/* line 291, ../scss/screen.scss */
 #LC-Press .gradient #bg-Press .row .columns #press-message {
-  margin-top: 2%;
   color: #bdc3c7;
   font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
   line-height: 150%;
 }
-/* line 285, ../scss/screen.scss */
+/* line 297, ../scss/screen.scss */
 #LC-Press .gradient #bg-Press .row .columns #press-message span {
   font-weight: bold;
   color: white;
 }
-/* line 291, ../scss/screen.scss */
+/* line 303, ../scss/screen.scss */
 #LC-Press .gradient #bg-Press .row .columns #press-button {
   margin-top: 5%;
   text-align: center;
 }
-/* line 297, ../scss/screen.scss */
+/* line 309, ../scss/screen.scss */
 #LC-Press .gradient #bg-Press .row .columns #press-button a button {
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -451,20 +465,20 @@ body {
   padding: 20px;
   border: 1px solid white;
 }
-/* line 305, ../scss/screen.scss */
+/* line 317, ../scss/screen.scss */
 #LC-Press .gradient #bg-Press .row .columns #press-button a button:hover {
   background: rgba(93, 13, 186, 0.8);
   cursor: pointer;
 }
 
-/* line 317, ../scss/screen.scss */
+/* line 329, ../scss/screen.scss */
 #BG-Gradient {
   height: 106px;
   width: 100%;
   position: relative;
   background: url("../img/bg-gradient.png") repeat-x center bottom transparent;
 }
-/* line 323, ../scss/screen.scss */
+/* line 335, ../scss/screen.scss */
 #BG-Gradient #gradient {
   width: 100%;
   height: 100%;
@@ -475,7 +489,7 @@ body {
   /* W3C */
 }
 
-/* line 333, ../scss/screen.scss */
+/* line 345, ../scss/screen.scss */
 #LC-Contact {
   width: 100%;
   height: 100% !important;
@@ -486,7 +500,7 @@ body {
   margin-top: -2px !important;
   overflow: hidden;
 }
-/* line 343, ../scss/screen.scss */
+/* line 355, ../scss/screen.scss */
 #LC-Contact .mail-top {
   height: 0;
   overflow: hidden;
@@ -496,7 +510,7 @@ body {
   top: 0;
   z-index: 2;
 }
-/* line 352, ../scss/screen.scss */
+/* line 364, ../scss/screen.scss */
 #LC-Contact .mail-top div {
   border-left: 1000px solid rgba(0, 0, 0, 0);
   border-right: 1000px solid rgba(0, 0, 0, 0);
@@ -507,7 +521,7 @@ body {
   position: absolute;
   width: 0;
 }
-/* line 365, ../scss/screen.scss */
+/* line 377, ../scss/screen.scss */
 #LC-Contact .mail-bot {
   height: 0;
   overflow: hidden;
@@ -517,7 +531,7 @@ body {
   bottom: 0;
   z-index: 1;
 }
-/* line 374, ../scss/screen.scss */
+/* line 386, ../scss/screen.scss */
 #LC-Contact .mail-bot div {
   border-left: 1000px solid rgba(0, 0, 0, 0);
   border-right: 1000px solid rgba(0, 0, 0, 0);
@@ -528,16 +542,16 @@ body {
   position: absolute;
   width: 0;
 }
-/* line 386, ../scss/screen.scss */
+/* line 398, ../scss/screen.scss */
 #LC-Contact .row {
   position: relative;
   z-index: 5;
 }
-/* line 390, ../scss/screen.scss */
+/* line 402, ../scss/screen.scss */
 #LC-Contact .row #lc-contact-us {
   padding: 20px;
 }
-/* line 393, ../scss/screen.scss */
+/* line 405, ../scss/screen.scss */
 #LC-Contact .row #lc-contact-us #lc-contact-title {
   font-size: 4rem;
   text-align: center;
@@ -545,37 +559,37 @@ body {
   text-transform: uppercase;
   color: white;
 }
-/* line 403, ../scss/screen.scss */
+/* line 415, ../scss/screen.scss */
 #LC-Contact .msg-contain {
   z-index: 5;
   position: relative;
   padding: 20px;
 }
-/* line 408, ../scss/screen.scss */
+/* line 420, ../scss/screen.scss */
 #LC-Contact .msg-contain .msg-content p {
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: 100;
   text-align: center;
-  color: #bdc3c7;
+  color: white;
 }
-/* line 420, ../scss/screen.scss */
+/* line 432, ../scss/screen.scss */
 #LC-Contact #contact-form {
   position: relative;
   z-index: 5;
 }
-/* line 428, ../scss/screen.scss */
+/* line 440, ../scss/screen.scss */
 #LC-Contact #contact-form .columns form .row .columns {
   position: relative;
 }
-/* line 431, ../scss/screen.scss */
+/* line 443, ../scss/screen.scss */
 #LC-Contact #contact-form .columns form .row .columns .error {
   position: absolute;
   right: 35px;
   top: 20px;
   font-family: "MarkBold";
 }
-/* line 437, ../scss/screen.scss */
+/* line 449, ../scss/screen.scss */
 #LC-Contact #contact-form .columns form .row .columns input[type="text"] {
   padding: 15px;
   height: 60px;
@@ -584,11 +598,11 @@ body {
   border: 0;
   box-shadow: none;
 }
-/* line 446, ../scss/screen.scss */
+/* line 458, ../scss/screen.scss */
 #LC-Contact #contact-form .columns form .row .columns input[type="text"]::-webkit-input-placeholder, #LC-Contact #contact-form .columns form .row .columns textarea::-webkit-input-placeholder {
   color: #5c02c2;
 }
-/* line 449, ../scss/screen.scss */
+/* line 461, ../scss/screen.scss */
 #LC-Contact #contact-form .columns form .row .columns textarea {
   padding: 15px;
   resize: none;
@@ -598,7 +612,7 @@ body {
   box-shadow: none;
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 458, ../scss/screen.scss */
+/* line 470, ../scss/screen.scss */
 #LC-Contact #contact-form .columns form .row .columns input[type="submit"] {
   font-size: 1.5em;
   color: white;
@@ -613,20 +627,20 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
-/* line 473, ../scss/screen.scss */
+/* line 485, ../scss/screen.scss */
 #LC-Contact #contact-form .columns form .row .columns input[type="submit"]:hover {
   cursor: pointer;
   background: #5c02c2;
 }
-/* line 484, ../scss/screen.scss */
+/* line 496, ../scss/screen.scss */
 #LC-Contact #contact-form .columns #contact-msg h4 {
   margin-top: 3%;
   font-weight: 300;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
 }
-/* line 497, ../scss/screen.scss */
+/* line 509, ../scss/screen.scss */
 #LC-Contact .row #contact-email p {
   margin-top: 17px;
   text-align: center;
@@ -635,13 +649,13 @@ body {
   letter-spacing: 3px;
   font-weight: 300;
 }
-/* line 507, ../scss/screen.scss */
+/* line 519, ../scss/screen.scss */
 #LC-Contact .row #media-links #social-media {
   position: relative;
   margin: 10px auto;
   display: table;
 }
-/* line 512, ../scss/screen.scss */
+/* line 524, ../scss/screen.scss */
 #LC-Contact .row #media-links #social-media li {
   height: 60px;
   width: 60px;
@@ -652,23 +666,23 @@ body {
   margin-left: 25px;
   position: relative;
 }
-/* line 522, ../scss/screen.scss */
+/* line 534, ../scss/screen.scss */
 #LC-Contact .row #media-links #social-media li a {
   position: absolute;
 }
-/* line 525, ../scss/screen.scss */
+/* line 537, ../scss/screen.scss */
 #LC-Contact .row #media-links #social-media li a img {
   position: absolute;
   top: 19px;
   left: 19px;
 }
-/* line 532, ../scss/screen.scss */
+/* line 544, ../scss/screen.scss */
 #LC-Contact .row #media-links #social-media li:hover {
   background: #5c02c2;
   cursor: pointer;
 }
 
-/* line 545, ../scss/screen.scss */
+/* line 557, ../scss/screen.scss */
 #LC-Footer {
   border-top: 10px solid;
   padding: 30px;
@@ -677,14 +691,14 @@ body {
   width: 100%;
   position: relative;
 }
-/* line 554, ../scss/screen.scss */
+/* line 566, ../scss/screen.scss */
 #LC-Footer .row ul {
   position: relative;
   z-index: 5;
   margin-top: -65px;
   margin-bottom: 30px;
 }
-/* line 559, ../scss/screen.scss */
+/* line 571, ../scss/screen.scss */
 #LC-Footer .row ul li {
   height: 60px;
   width: 60px;
@@ -695,34 +709,34 @@ body {
   margin-left: 25px;
   position: relative;
 }
-/* line 568, ../scss/screen.scss */
+/* line 580, ../scss/screen.scss */
 #LC-Footer .row ul li a {
   position: absolute;
 }
-/* line 571, ../scss/screen.scss */
+/* line 583, ../scss/screen.scss */
 #LC-Footer .row ul li a img {
   position: absolute;
   top: 19px;
   left: 19px;
 }
-/* line 578, ../scss/screen.scss */
+/* line 590, ../scss/screen.scss */
 #LC-Footer .row ul li:hover {
   background: #5c02c2;
   cursor: pointer;
 }
-/* line 587, ../scss/screen.scss */
+/* line 599, ../scss/screen.scss */
 #LC-Footer #footer-content .font {
   font-family: "MarkMedium";
   text-align: center;
   font-size: 1rem;
 }
-/* line 594, ../scss/screen.scss */
+/* line 606, ../scss/screen.scss */
 #LC-Footer #footer-content #media-link #soc-media {
   position: relative;
   margin: -60px auto;
   display: table;
 }
-/* line 599, ../scss/screen.scss */
+/* line 611, ../scss/screen.scss */
 #LC-Footer #footer-content #media-link #soc-media li {
   height: 60px;
   width: 60px;
@@ -732,24 +746,24 @@ body {
   display: inline-block;
   position: relative;
 }
-/* line 608, ../scss/screen.scss */
+/* line 620, ../scss/screen.scss */
 #LC-Footer #footer-content #media-link #soc-media li a {
   position: absolute;
 }
-/* line 611, ../scss/screen.scss */
+/* line 623, ../scss/screen.scss */
 #LC-Footer #footer-content #media-link #soc-media li a img {
   position: absolute;
   top: 19px;
   left: -12px;
 }
-/* line 618, ../scss/screen.scss */
+/* line 630, ../scss/screen.scss */
 #LC-Footer #footer-content #media-link #soc-media li:hover {
   background: #5c02c2;
   cursor: pointer;
 }
 
 /* Closes Footer */
-/* line 630, ../scss/screen.scss */
+/* line 642, ../scss/screen.scss */
 #menu-slide-icon {
   position: fixed;
   top: 17px;
@@ -762,25 +776,25 @@ body {
   z-index: 12;
 }
 
-/* line 642, ../scss/screen.scss */
+/* line 654, ../scss/screen.scss */
 #menu-slide-icon:hover {
   -webkit-filter: invert(0.9);
   filter: invert(0.9);
   cursor: pointer;
 }
 
-/* line 648, ../scss/screen.scss */
+/* line 660, ../scss/screen.scss */
 #menu-slide-back {
   height: 60px;
   width: 100%;
   background: white;
   position: fixed;
   top: 0;
-  z-index: 9;
+  z-index: 10;
   border-bottom: 1px solid #bdc3c7;
 }
 
-/* line 657, ../scss/screen.scss */
+/* line 669, ../scss/screen.scss */
 #menu-mob-nav {
   background: url("../img/logo-b.png") no-repeat;
   background-size: cover;
@@ -792,7 +806,7 @@ body {
   right: 14px;
 }
 
-/* line 668, ../scss/screen.scss */
+/* line 680, ../scss/screen.scss */
 #LC-Mobile-Nav {
   position: fixed;
   left: -180px;
@@ -802,12 +816,12 @@ body {
   background: black;
   z-index: 8;
 }
-/* line 677, ../scss/screen.scss */
+/* line 689, ../scss/screen.scss */
 #LC-Mobile-Nav #LC-Mobile-Nav-Links {
   list-style: none;
   margin-top: 91px;
 }
-/* line 681, ../scss/screen.scss */
+/* line 693, ../scss/screen.scss */
 #LC-Mobile-Nav #LC-Mobile-Nav-Links .mob-nav {
   padding: 10px;
   text-align: center;
@@ -816,16 +830,16 @@ body {
   text-transform: uppercase;
   color: white;
 }
-/* line 689, ../scss/screen.scss */
+/* line 701, ../scss/screen.scss */
 #LC-Mobile-Nav #LC-Mobile-Nav-Links .mob-nav a {
   color: white;
 }
-/* line 693, ../scss/screen.scss */
+/* line 705, ../scss/screen.scss */
 #LC-Mobile-Nav #LC-Mobile-Nav-Links .mob-nav:hover {
   cursor: pointer;
   background: #5c02c2;
 }
-/* line 698, ../scss/screen.scss */
+/* line 710, ../scss/screen.scss */
 #LC-Mobile-Nav #LC-Mob-Tel {
   color: white;
   position: absolute;
@@ -833,7 +847,7 @@ body {
   width: 100%;
   text-align: center;
 }
-/* line 706, ../scss/screen.scss */
+/* line 718, ../scss/screen.scss */
 #LC-Mobile-Nav #LC-Mob-Soc {
   position: absolute;
   bottom: 45px;
@@ -842,11 +856,11 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-/* line 722, ../scss/screen.scss */
+/* line 734, ../scss/screen.scss */
 #LC-Mobile-Nav #LC-Mob-Soc li:nth-child(n+1) {
   margin-top: 30px;
 }
-/* line 727, ../scss/screen.scss */
+/* line 739, ../scss/screen.scss */
 #LC-Mobile-Nav div #copyright-nav {
   text-align: center;
   font-weight: 100;
@@ -858,9 +872,70 @@ body {
   font-weight: 500;
 }
 
-/* line 739, ../scss/screen.scss */
+/* line 751, ../scss/screen.scss */
 #LC-Contact-Container {
   height: auto;
   width: 100%;
   position: relative;
+}
+
+/* line 757, ../scss/screen.scss */
+#LC-RSS {
+  height: 100%;
+  width: 330px;
+  background: black;
+  position: fixed;
+  right: -330px;
+  z-index: 9;
+  padding-top: 110px;
+}
+/* line 766, ../scss/screen.scss */
+#LC-RSS .rss-close {
+  position: absolute;
+  right: 15px;
+  margin-top: -25px;
+}
+/* line 771, ../scss/screen.scss */
+#LC-RSS .rss-close:hover {
+  filter: invert(0.5);
+  -webkit-filter: invert(0.5);
+  cursor: pointer;
+}
+/* line 777, ../scss/screen.scss */
+#LC-RSS h2 {
+  color: white;
+  font-size: 1.5rem;
+  border-bottom: 2px solid white;
+  font-family: 'Lato', sans-serif;
+  text-indent: 10px;
+  padding-bottom: 10px;
+}
+/* line 785, ../scss/screen.scss */
+#LC-RSS #RSS-Border {
+  border-bottom: 2px solid white;
+}
+/* line 789, ../scss/screen.scss */
+#LC-RSS #RSS-Desk-Feed, #LC-RSS #RSS-Mob-Feed {
+  padding-top: 10px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  color: gainsboro;
+}
+/* line 796, ../scss/screen.scss */
+#LC-RSS #RSS-Desk-Feed b a, #LC-RSS #RSS-Mob-Feed b a {
+  color: white;
+  border-bottom: 1px solid #202020;
+}
+/* line 801, ../scss/screen.scss */
+#LC-RSS #RSS-Desk-Feed .rss-date, #LC-RSS #RSS-Mob-Feed .rss-date {
+  color: #5c02c2;
+  font-style: italic;
+  font-size: 0.825rem;
+  font-family: sans-serif;
+}
+/* line 807, ../scss/screen.scss */
+#LC-RSS #RSS-Desk-Feed .rss-content, #LC-RSS #RSS-Mob-Feed .rss-content {
+  color: slategrey;
+  font-size: 0.825rem;
 }

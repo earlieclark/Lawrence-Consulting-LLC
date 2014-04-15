@@ -22,8 +22,8 @@
 		font-size: 0.825rem !important;
 	}
 	#bg-walk, #bg-bridge {
-		height: 250px !important;
-		width: 250px !important;
+		height: 190px !important;
+		width: 190px !important;
 	}
 	#comp-title {
 		font-size: 4rem !important;
@@ -47,7 +47,18 @@
 	#menu-mob-nav {
 		display: none;
 	}
+}
 
+@media all and (max-width: 830px) and (min-width: 776px) {
+	#landing-nav > li {
+		margin-left: 10px !important;
+	}
+}
+
+@media all and (max-width: 775px) and (min-width: 721px) {
+	.li-blog {
+		display: none !important;
+	}
 }
 
 
@@ -61,6 +72,12 @@
 	}
 
 }
+@media all and (min-width: 568px) {
+	.rss-close, #RSS-Mob-Feed {
+		display: none !important; 
+	}
+}
+
 
 @media all and (max-width:720px) and (min-width: 641px) {
 	#menu-slide-icon {
@@ -90,6 +107,21 @@
 @media all and (max-width: 1023px) and (min-width: 721px) {
 	.site-email {
 	}
+	#press-header {
+		margin-top: 20% !important; 
+	}
+	#bg-Press {
+		padding-top: 91px;
+	}
+	#BG-Gradient {
+		display: none;
+	}
+}
+@media all and (max-width: 720px) and (min-width: 641px) {
+	#BG-Gradient {
+		display: none;
+	}
+	
 }
 
 @media all and (max-width: 640px) and (min-width: 480px) {
@@ -102,8 +134,14 @@
 	#BG-Gradient, #LC-Footer {
 		display: none;	 
 	}
+	#bg-Press {
+		padding-top: 91px;
+	}
 	#landing-header {
 		visibility: hidden;
+	}
+	#press-header {
+		margin-top: 20% !important;
 	}
 
 	#comp-title {
@@ -121,7 +159,112 @@
 	}
 }
 
+
+/* Specific Styling for LC-Press Section - Landscape*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+	#BG-Gradient {
+	display: none !important;
+	}
+	#LC-Press > .gradient {
+		position: relative !important;
+		background: none !important;
+	}
+	#bg-Press {
+		background: none !important;
+		padding-top: 0px;
+	}
+	#LC-Press {
+		background: none !important;
+		-webkit-filter: none !important;
+	}
+	#press-header, #press-message, #press-message > span {
+		color: black !important;
+	} 
+	#press-header {
+		font-size: 4rem !important;
+		margin-top: 0% !important;
+	}
+	.press-border {
+		background: black !important;
+	}
+	.press-here {
+		background: #5c02c2 !important;
+		border: 4px double #fff !important;
+		border-color: black; 
+	}
+
+	#LC-Mob-Soc, #LC-Mob-Tel {
+		display: none;
+	}
+	#btn-explore {
+		border: 5px ridge white !important;
+		background: #5c02c2 !important;
+	}
+	textarea, input[type="submit"], input[type="text"] {
+		border-radius: 0px !important;
+	}
+	input[type="submit"] {
+		background: #5c02c2 !important;
+		-webkit-appearance: none;
+		border: 4px double #fff !important;
+	}
+	.mob-blog {
+		display: none;
+	}
+
+}
+
+/* Iphone Styling - Portrait */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+	#press-header {
+		font-size: 1.2rem !important;
+		letter-spacing: 1px !important;
+	} 
+	.msg-text {
+		font-weight: 300 !important;
+	}
+	input[type="submit"] {
+		border-radius: 0px !important;
+		border: 4px outset #5c02c2 !important;
+		-webkit-appearance: none;
+		background-color: #5c02c2 !important;
+	}
+	#LC-Press {
+		-webkit-filter: none !important;
+		padding-top: 115px !important;
+	}
+	.press-here {
+		border: 4px outset #5c02c2 !important; 
+		padding: 10px 20px !important;
+	}
+	#btn-explore {
+		border: 5px outset #5c02c2 !important;
+	}
+	#bg-walk, #bg-bridge {
+		height: 215px !important;
+		width: 215px !important;
+	}
+	#RSS-Desk-Feed{
+		display: none !important;
+	}
+	#LC-RSS {
+		display: none;
+		width: 100% !important;
+		right: 0;
+	}
+}
+
+
 @media all and (max-width: 479px) {
+	#RSS-Desk-Feed {
+		display: none;
+	}
+	#LC-RSS {
+		display: none;
+		width: 100% !important;
+		right: 0;
+	}
 	.mail-top, .mail-bot {
 		display: none;
 	}
@@ -135,17 +278,20 @@
 		height: auto !important;
 		padding-bottom: 35px !important;
 	}
-	#LC-What, #LC-Press, #LC-Contact {
+	#LC-Press > .gradient {
+		background: white !important;
 	}
+	#LC-Press {
+		background: white !important;
+	}
+
 	.border-c {
 		margin: 0px auto !important;
 	}
 	#bg-Press {
-		background: none !important;
+		background: white !important;
 	}
-	#LC-Press {
-		background: none #5c02c2 !important;
-	}
+	
 	#BG-Gradient, #LC-Footer {
 		display: none;
 	}
@@ -159,14 +305,17 @@
 		margin-bottom: 60px;
 		color: white !important;
 		font-weight: 300px !important;
+		font-size: 0.825rem !important;
 	}
 	#landing-header {
 		visibility: hidden;
 	}
 	#press-header {
-		font-size: 1.5rem !important;
-		font-weight: 300 !important;
+		font-size: 1.2rem !important;
+		font-weight: bolder !important;
+		text-transform: uppercase;
 		line-height: 100% !important;
+		color: #000 !important;
 	}
 	#comp-title {
 		margin-top: -40px;
@@ -174,6 +323,9 @@
 	}
 	#comp-desc {
 		font-size: 1.5rem !important;
+	}
+	#mission-header, #what-header {
+		width: 100% !important;
 	}
 
 	#mission-head, #what-head {
@@ -203,33 +355,54 @@
 		font-weight: bolder !important;
 	}
 
-	#bg-walk, #bg-bridge {
-		display: none;
+	#btn-explore {
+		background: #5c02c2 !important;
+		
+	}
+	#btn-explore:hover {
+		background: rgba(2,2,2,0.8) !important;
 	}
 	#lc-contact-title {
 		font-size: 1.2rem !important;
 	}
-	.msg-content > p {		
+	.msg-text {
 		font-size: 0.825rem !important;	
 		color: white !important;
 	}
 	#press-message > span {
 		font-size: 0.95rem !important;
+		color: #5c02c2 !important;
 	}
 	#press-message {
-		color: #fff !important;
+		color: #000 !important;
 		font-size: 0.8rem !important;
+		font-weight: bolder !important;
 	}
-
+	.press-here {
+		background: #5c02c2 !important;
+	}
+	.press-here:hover {
+		background: rgba(2,2,2,0.8) !important;
+	}
+	.press-border {
+		background: #000 !important;
+	}
 	input[type="text"]{
 		padding: 15px !important;
 		height: 30px !important;
+		border-radius: 0px !important;
 	}
 
 	input[type="submit"] {
 		font-size: 1rem !important;
 		padding: 5px !important;
+		border-radius: 0px !important;
 	}
+	textarea {
+		border-radius: 0px !important;
+	}
+
+
 
 
 }  /*Closes 479 min-width media
